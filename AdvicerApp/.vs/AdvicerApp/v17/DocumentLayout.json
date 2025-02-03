@@ -1,0 +1,272 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{498F8223-DEF7-4FD3-82F5-F1161C5D653B}|AdvicerApp\\AdvicerApp.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498F8223-DEF7-4FD3-82F5-F1161C5D653B}|AdvicerApp\\AdvicerApp.csproj|solutionrelative:advicerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\repositories\\restaurantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\repositories\\restaurantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\repositories\\menurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\repositories\\irestaurantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\repositories\\irestaurantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\repositories\\imenurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\repositories\\imenurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\repositories\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\repositories\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\Program.cs",
+              "RelativeDocumentMoniker": "AdvicerApp\\Program.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\Program.cs",
+              "RelativeToolTip": "AdvicerApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:20:43.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.DAL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\ServiceRegistration.cs",
+              "RelativeToolTip": "AdvicerApp.DAL\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:16:53.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Repositories\\CommentRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\CommentRepository.cs",
+              "RelativeToolTip": "AdvicerApp.DAL\\Repositories\\CommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:13:16.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RestaurantRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\RestaurantRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Repositories\\RestaurantRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\RestaurantRepository.cs",
+              "RelativeToolTip": "AdvicerApp.DAL\\Repositories\\RestaurantRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:12:17.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\MenuRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Repositories\\MenuRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\MenuRepository.cs",
+              "RelativeToolTip": "AdvicerApp.DAL\\Repositories\\MenuRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:11:30.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "AdvicerApp.DAL\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:10:30.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "AdvicerApp.DAL\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T16:27:17.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\ICommentRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Repositories\\ICommentRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\ICommentRepository.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Repositories\\ICommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T16:09:21.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IMenuRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IMenuRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Repositories\\IMenuRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IMenuRepository.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Repositories\\IMenuRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T16:06:02.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRestaurantRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IRestaurantRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Repositories\\IRestaurantRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IRestaurantRepository.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Repositories\\IRestaurantRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T16:05:09.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Repositories\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\ICategoryRepository.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Repositories\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T16:01:24.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T15:46:23.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Entities\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Entities\\Common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Entities\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Entities\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T15:49:10.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Enums\\Role.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Enums\\Role.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Enums\\Role.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Enums\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T15:45:38.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Entities\\User.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T15:45:13.073Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

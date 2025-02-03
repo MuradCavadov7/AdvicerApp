@@ -1,0 +1,12 @@
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\bin\Debug\net8.0\AdvicerApp.Core.deps.json
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\bin\Debug\net8.0\AdvicerApp.Core.dll
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\bin\Debug\net8.0\AdvicerApp.Core.pdb
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.csproj.AssemblyReference.cache
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.AssemblyInfoInputs.cache
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.AssemblyInfo.cs
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.dll
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\refint\AdvicerApp.Core.dll
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.pdb
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\ref\AdvicerApp.Core.dll
