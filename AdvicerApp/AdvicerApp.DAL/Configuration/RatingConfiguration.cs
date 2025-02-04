@@ -20,6 +20,7 @@ public class RatingConfiguration : IEntityTypeConfiguration<Rating>
 
         builder.HasOne(x => x.Restaurant)
             .WithMany(x=>x.Ratings)
-            .HasForeignKey(x => x.RestaurantId);
+            .HasForeignKey(x => x.RestaurantId)
+            .OnDelete(DeleteBehavior.NoAction);
     }
 }

@@ -42,13 +42,13 @@ public class GenericRepository<T>(AdvicerAppDbContext _context) : IGenericReposi
         {
             query = query.AsNoTracking();
         }
-        return await Table.Select(select).ToListAsync();
+        return await query.Select(select).ToListAsync();
     }
 
     public async Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T, U>> select, bool isDeleted = true)
     {
         IQueryable<T> query = _context.Set<T>().Where(x => x.IsDeleted == !isDeleted);
-        return await Table.Select(select).ToListAsync();
+        return await query.Select(select).ToListAsync();
     }
 
     public async Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true)

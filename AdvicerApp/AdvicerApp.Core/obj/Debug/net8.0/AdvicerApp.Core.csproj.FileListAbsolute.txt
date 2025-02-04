@@ -10,3 +10,4 @@ C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\Ad
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\refint\AdvicerApp.Core.dll
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.pdb
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\ref\AdvicerApp.Core.dll
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp.Core\obj\Debug\net8.0\AdvicerApp.Core.sourcelink.json
