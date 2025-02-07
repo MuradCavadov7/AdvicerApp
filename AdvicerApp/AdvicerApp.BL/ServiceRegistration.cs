@@ -13,8 +13,17 @@ public static class ServiceRegistration
     public static IServiceCollection AddServices(this IServiceCollection services)
     {
         services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IRestaurantService, RestaurantService>();
+        services.AddScoped<IRatingService, RatingService>();
         services.AddScoped<IJwtHandler, JwtHandler>();
+        services.AddScoped<ICurrentUser, CurrentUser>();
         services.AddMemoryCache();
+        return services;
+    }
+    public static IServiceCollection AddHttpContextAcs(this IServiceCollection services)
+    {
+        services.AddHttpContextAccessor();
         return services;
     }
     public static IServiceCollection AddFluentValidation(this IServiceCollection services)

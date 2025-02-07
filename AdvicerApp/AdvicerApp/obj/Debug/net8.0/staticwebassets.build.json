@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "LIjjK1aoaL1W4e6jSHBEA7qgPECbhuPB2lNJjD2k7fk=",
+  "Hash": "NmueqRsSuF/Z00KOSBBiZIOORxUyPF4ghlbPfaraCHg=",
   "Source": "AdvicerApp",
   "BasePath": "_content/AdvicerApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AdvicerApp\\wwwroot",
+      "Source": "AdvicerApp",
+      "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
+      "BasePath": "_content/AdvicerApp",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

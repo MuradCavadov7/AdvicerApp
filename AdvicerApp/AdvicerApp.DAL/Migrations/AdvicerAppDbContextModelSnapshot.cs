@@ -313,9 +313,6 @@ namespace AdvicerApp.DAL.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
-
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -534,7 +531,7 @@ namespace AdvicerApp.DAL.Migrations
                     b.HasOne("AdvicerApp.Core.Entities.Category", "Category")
                         .WithMany("Restaurants")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("AdvicerApp.Core.Entities.User", "Owner")

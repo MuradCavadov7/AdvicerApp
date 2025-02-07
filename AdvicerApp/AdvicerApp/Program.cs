@@ -37,7 +37,8 @@ public class Program
         builder.Services.AddFluentValidation();
         builder.Services.AddAutoMapper();
         builder.Services.AddRepositories();
-        builder.Services.AddAuth(builder.Configuration);
+        builder.Services.AddHttpContextAcs();
+        
         builder.Services.AddJwtOptions(builder.Configuration);
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(options =>
@@ -65,6 +66,8 @@ public class Program
         }
     });
         });
+        builder.Services.AddAuth(builder.Configuration);
+        builder.Services.AddAuthorization();
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -79,7 +82,9 @@ public class Program
         app.ExceptionHandler();
         app.UseHttpsRedirection();
         app.UseSeedData();
+        app.UseAuthentication();
         app.UseAuthorization();
+
 
 
         app.MapControllers();

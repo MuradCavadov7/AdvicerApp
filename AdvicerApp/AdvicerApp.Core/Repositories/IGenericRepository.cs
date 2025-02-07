@@ -4,17 +4,22 @@ namespace AdvicerApp.Core.Repositories;
 
 public interface IGenericRepository<T> where T : BaseEntity, new()
 {
-    Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T, U>> select, bool getAll = false, bool asNoTrack = true,bool isDeleted = true);
-    Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T, U>> select, bool isDeleted = true);
+    Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T, U>> select,bool asNoTrack = true, bool isDeleted = false);
+    Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T, U>> select, bool isDeleted = false);
+    Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, T>> select, bool asNoTrack = true, bool isDeleted = false);
 
-    Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true);
-    //Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select, bool isDeleted = true);
+    Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = false);
+    Task<T?> GetByIdAsync(int id,Expression<Func<T, T>> select, bool asNoTrack = true, bool isDeleted = false);
+    //Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select, bool isDeleted = false);
 
-    Task<IEnumerable<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true);
-    //Task<IEnumerable<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool isDeleted = true);
+    Task<IEnumerable<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = false);
+    Task<IEnumerable<T>> GetWhereAsync(Expression<Func<T, bool>> expression, Expression<Func<T, T>> select, bool asNoTrack = true, bool isDeleted = false);
 
-    Task<U?> GetFirstAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true);
-    //Task<U?> GetFirstAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select,bool isDeleted = true);
+    //Task<IEnumerable<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool isDeleted = false);
+
+    Task<U?> GetFirstAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = false);
+    Task<T?> GetFirstAsync(Expression<Func<T, bool>> expression, Expression<Func<T, T>> select, bool asNoTrack = true, bool isDeleted = false);
+    //Task<U?> GetFirstAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select,bool isDeleted = false);
 
     Task<bool> IsExistAsync(int id);
     Task<bool> IsExistAsync(Expression<Func<T, bool>> expression);

@@ -15,9 +15,4 @@ public class Restaurant : BaseEntity
     public ICollection<Menu> Menus { get; set; }
     public ICollection<RestaurantImage> RestaurantImages { get; set; }
     public ICollection<Comment> Comments {  get; set; }
-
-    
-
-
-
 }

@@ -158,3 +158,4 @@ C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\FluentV
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\AdvicerApp.staticwebassets.runtime.json

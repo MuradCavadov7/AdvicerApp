@@ -7,10 +7,11 @@ using AdvicerApp.Core.Entities;
 using AdvicerApp.Core.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler,RoleManager<IdentityRole> _roleManager) : IAuthService
+public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler,RoleManager<IdentityRole> _roleManager,SignInManager<User> _signInManager) : IAuthService
 {
     public async Task<string> RegisterAsync(RegisterDto dto)
     {
@@ -32,12 +33,26 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
                 desc.Add(error.Description);
             }
         }
-        var roleResult = await _userManager.AddToRoleAsync(user, nameof(Role.User));
-        if (!roleResult.Succeeded)
+        if(!dto.IsRestaurantOwner)
         {
-            foreach (var error in result.Errors)
+            var roleResult = await _userManager.AddToRoleAsync(user, nameof(Role.User));
+            if (!roleResult.Succeeded)
             {
-                desc.Add(error.Description);
+                foreach (var error in result.Errors)
+                {
+                    desc.Add(error.Description);
+                }
+            }
+        }
+        else
+        {
+            var roleResult = await _userManager.AddToRoleAsync(user, nameof(Role.Owner));
+            if (!roleResult.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    desc.Add(error.Description);
+                }
             }
         }
         return user.UserName;
@@ -62,11 +77,15 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             user = await _userManager.FindByNameAsync(dto.UsernameOrEmail);
         }
         if (user == null) throw new BadRequestException("Username or password is(are) wrong");
-        var isPassword = await _userManager.CheckPasswordAsync(user, dto.Password);
-        if (!isPassword) throw new BadRequestException("Username or password is(are) wrong");
+        List<string> desc = new();
+
+        var result = await _signInManager.CheckPasswordSignInAsync(user, dto.Password,false);
+        if (!result.Succeeded)
+        {
+            if (result.IsLockedOut) throw new UserLockedOutException();
+            if(result.IsNotAllowed) throw new BadRequestException("Username or password is(are) wrong");
+        } 
         return _jwtHandler.CreateJwtToken(user, 36);
-
-
     }
 
 }

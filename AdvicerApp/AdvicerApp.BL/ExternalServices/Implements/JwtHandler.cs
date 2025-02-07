@@ -19,11 +19,10 @@ public class JwtHandler : IJwtHandler
     public string CreateJwtToken(User user, int hours)
     {
         List<Claim> claims = [
-            new Claim("Username",user.UserName),
-            new Claim("Fullname",user.Fullname),
-            new Claim("Email",user.Email),
-            new Claim("Role",user.Role.ToString()),
-            new Claim("Id",user.Id)
+            new Claim(ClaimTypes.Name,user.UserName),
+            new Claim(ClaimTypes.GivenName,user.Fullname),
+            new Claim(ClaimTypes.Email,user.Email),
+            new Claim(ClaimTypes.NameIdentifier,user.Id)
             ];
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_opt.SecretKey));
         SigningCredentials credentials = new(key,SecurityAlgorithms.HmacSha256);
@@ -31,8 +30,8 @@ public class JwtHandler : IJwtHandler
             issuer: _opt.Issuer,
             audience: _opt.Audience,
             claims : claims,
-            notBefore : DateTime.Now,
-            expires: DateTime.Now.AddMinutes(hours),
+            notBefore : DateTime.UtcNow,
+            expires: DateTime.UtcNow.AddHours(hours),
             signingCredentials: credentials);
         JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
         return handler.WriteToken(securityToken);

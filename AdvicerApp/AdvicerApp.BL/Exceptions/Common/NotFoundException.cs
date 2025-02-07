@@ -18,7 +18,7 @@ public class NotFoundException : Exception, IBaseException
 }
 public class NotFoundException<T> : NotFoundException, IBaseException
 {
-    public NotFoundException() : base(typeof(T).Name + "not found") { }
+    public NotFoundException() : base(typeof(T).Name +" "+ "not found") { }
     public NotFoundException(string message) : base(message) { }
 
 }

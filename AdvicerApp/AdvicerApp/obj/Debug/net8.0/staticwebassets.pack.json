@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\cjfzkhlw.zr2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\cjfzkhlw.zr2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\e4na1i5j.5ui.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\e4na1i5j.5ui.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\f0mcwiye.dno.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\f0mcwiye.dno.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\hobv1awb.umh.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\hobv1awb.umh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\m03y3uj3.5js.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\m03y3uj3.5js.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\n03mgyvv.0cr.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\n03mgyvv.0cr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\pvqzi1bx.vvq.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\pvqzi1bx.vvq.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\qum12bjj.0hx.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\qum12bjj.0hx.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\qundukdm.jmn.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\qundukdm.jmn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\szy5g1ik.u2n.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\szy5g1ik.u2n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\virkz5bq.qtn.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\virkz5bq.qtn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\ztwzg1xh.xrm.jpg",
+      "PackagePath": "staticwebassets\\imgs\\restaurant\\ztwzg1xh.xrm.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AdvicerApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AdvicerApp.props",
+      "PackagePath": "build\\AdvicerApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AdvicerApp.props",
+      "PackagePath": "buildMultiTargeting\\AdvicerApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AdvicerApp.props",
+      "PackagePath": "buildTransitive\\AdvicerApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

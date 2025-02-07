@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdvicerApp.DAL.Migrations
 {
     [DbContext(typeof(AdvicerAppDbContext))]
-    [Migration("20250204114540_Initial")]
-    partial class Initial
+    [Migration("20250205144308_Intial")]
+    partial class Intial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -316,9 +316,6 @@ namespace AdvicerApp.DAL.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
-
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -537,7 +534,7 @@ namespace AdvicerApp.DAL.Migrations
                     b.HasOne("AdvicerApp.Core.Entities.Category", "Category")
                         .WithMany("Restaurants")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("AdvicerApp.Core.Entities.User", "Owner")

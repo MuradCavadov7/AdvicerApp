@@ -32,7 +32,8 @@ public class RestaurantConfiguration : IEntityTypeConfiguration<Restaurant>
 
         builder.HasOne(x => x.Category)
             .WithMany(x => x.Restaurants)
-            .HasForeignKey(x => x.CategoryId);
+            .HasForeignKey(x => x.CategoryId)
+            .OnDelete(DeleteBehavior.Restrict);
 
     }
 }

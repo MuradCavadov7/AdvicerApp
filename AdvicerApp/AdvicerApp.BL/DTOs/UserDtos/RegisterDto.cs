@@ -9,6 +9,7 @@ public class RegisterDto
     public string Email { get; set; }
     public string Password { get; set; }
     public string RePassword {  get; set; }
+    public bool IsRestaurantOwner {  get; set; }
     public Gender Gender { get; set; }
     
 }

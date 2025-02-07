@@ -18,6 +18,6 @@ public class ExistsException : Exception, IBaseException
 }
 public class ExistsException<T> : ExistsException, IBaseException
 {
-    public ExistsException() : base(typeof(T).Name + "is exist") { }
+    public ExistsException() : base(typeof(T).Name + " " + "is exist") { }
     public ExistsException(string message) : base(message) { }
 }
