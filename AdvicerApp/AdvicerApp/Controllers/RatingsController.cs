@@ -12,7 +12,7 @@ namespace AdvicerApp.Controllers;
 [ApiController]
 public class RatingsController(IRatingService _service) : ControllerBase
 {
-    [Authorize(Roles = RoleConstants.AccessToRating)]
+    [Authorize(Roles = "User")]
     [HttpPost]
     public async Task<IActionResult> Create(RatingCreateDto dto)
     {
@@ -20,7 +20,7 @@ public class RatingsController(IRatingService _service) : ControllerBase
     }
 
 
-    [Authorize(Roles = RoleConstants.AccessToRating)]
+    [Authorize(Roles = "User")]
     [HttpDelete]
     [Route("{id}")]
     public async Task<IActionResult> Delete(int id)
@@ -30,7 +30,7 @@ public class RatingsController(IRatingService _service) : ControllerBase
     }
 
 
-    [Authorize(Roles = RoleConstants.AccessToRating)]
+    [Authorize(Roles = "User")]
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, RatingUpdateDto dto)
     {

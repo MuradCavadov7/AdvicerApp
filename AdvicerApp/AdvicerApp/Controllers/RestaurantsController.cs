@@ -19,7 +19,7 @@ namespace AdvicerApp.Controllers
             return Ok(await _service.GetAllAsync());
         }
 
-        [Authorize(Roles = RoleConstants.AccessToRestaurant)]
+        [Authorize(Roles = "Owner")]
         [HttpPost]
         [Route("[action]")]
         public async Task<IActionResult> Create([FromForm]CreateRestaurantDto dto)
@@ -28,7 +28,7 @@ namespace AdvicerApp.Controllers
         }
 
 
-        [Authorize(Roles = RoleConstants.AccessToRestaurant)]
+        [Authorize(Roles = "Owner")]
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> Delete(int id)
@@ -48,7 +48,7 @@ namespace AdvicerApp.Controllers
         }
 
 
-        [Authorize(Roles = RoleConstants.AccessToRestaurant)]
+        [Authorize(Roles = "Owner")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromForm] UpdateResturantDto dto)
         {

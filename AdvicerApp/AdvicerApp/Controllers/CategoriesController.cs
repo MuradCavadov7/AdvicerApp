@@ -28,7 +28,7 @@ public class CategoriesController(ICategoryService _service) : ControllerBase
 
 
 
-    [Authorize(Roles = RoleConstants.AccessToCategory)]
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     public async Task<IActionResult> Create(CategoryCreateDto dto)
     {
@@ -36,7 +36,7 @@ public class CategoriesController(ICategoryService _service) : ControllerBase
     }
 
 
-    [Authorize(Roles = RoleConstants.AccessToCategory)]
+    [Authorize(Roles = "Admin")]
     [HttpDelete]
     [Route("{id}")]
     public async Task<IActionResult> Delete(int id)
@@ -48,7 +48,7 @@ public class CategoriesController(ICategoryService _service) : ControllerBase
     }
 
 
-    [Authorize(Roles = RoleConstants.AccessToCategory)]
+    [Authorize(Roles = "Admin")]
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, CategoryUpdateDto dto)
     {

@@ -18,10 +18,6 @@ public class MenuConfiguration : IEntityTypeConfiguration<Menu>
             .IsRequired()
             .HasMaxLength(128);
 
-        builder.Property(x => x.Price)
-            .IsRequired()
-            .HasColumnType("decimal(18,2)");
-
         builder.HasOne(x => x.Restaurant)
             .WithMany(x => x.Menus)
             .HasForeignKey(x => x.RestaurantId);

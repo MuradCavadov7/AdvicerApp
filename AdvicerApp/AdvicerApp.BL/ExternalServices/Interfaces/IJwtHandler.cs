@@ -4,5 +4,5 @@ namespace AdvicerApp.BL.ExternalServices.Interfaces;
 
 public interface IJwtHandler
 {
-    string CreateJwtToken(User user,int hours);
+    Task<string> CreateJwtToken(User user,int hours);
 }

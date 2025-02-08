@@ -2,6 +2,7 @@
 using AdvicerApp.BL.Exceptions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text;
@@ -56,6 +57,9 @@ public static class ServiceRegistration
         services.AddAuthentication(x =>
         {
             x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+
         })
         .AddJwtBearer(opt =>
         {
@@ -69,7 +73,9 @@ public static class ServiceRegistration
                 ValidIssuer = jwtOpt.Issuer,
                 ValidAudience = jwtOpt.Audience,
                 IssuerSigningKey = signInKey,
-                ClockSkew = TimeSpan.Zero
+                ClockSkew = TimeSpan.Zero,
+
+                RoleClaimType = ClaimTypes.Role
             };
         });
         return services;

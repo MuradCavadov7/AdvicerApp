@@ -85,7 +85,7 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             if (result.IsLockedOut) throw new UserLockedOutException();
             if(result.IsNotAllowed) throw new BadRequestException("Username or password is(are) wrong");
         } 
-        return _jwtHandler.CreateJwtToken(user, 36);
+        return await _jwtHandler.CreateJwtToken(user, 36);
     }
 
 }

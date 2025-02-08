@@ -13,6 +13,7 @@ public class AdvicerAppDbContext : IdentityDbContext<User>
     public DbSet<Rating> Ratings { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<RestaurantImage> RestaurantImages {  get; set; }
+    public DbSet<MenuItem> MenuItems { get; set; }
     public AdvicerAppDbContext(DbContextOptions options) : base(options)
     {
     }

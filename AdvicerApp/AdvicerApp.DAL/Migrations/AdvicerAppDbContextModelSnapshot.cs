@@ -108,10 +108,6 @@ namespace AdvicerApp.DAL.Migrations
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -119,9 +115,6 @@ namespace AdvicerApp.DAL.Migrations
                         .IsRequired()
                         .HasMaxLength(32)
                         .HasColumnType("nvarchar(32)");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("RestaurantId")
                         .HasColumnType("int");
@@ -134,6 +127,51 @@ namespace AdvicerApp.DAL.Migrations
                     b.HasIndex("RestaurantId");
 
                     b.ToTable("Menus");
+                });
+
+            modelBuilder.Entity("AdvicerApp.Core.Entities.MenuItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(512)
+                        .HasColumnType("nvarchar(512)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MenuId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuId");
+
+                    b.ToTable("MenuItems");
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Rating", b =>
@@ -507,6 +545,17 @@ namespace AdvicerApp.DAL.Migrations
                     b.Navigation("Restaurant");
                 });
 
+            modelBuilder.Entity("AdvicerApp.Core.Entities.MenuItem", b =>
+                {
+                    b.HasOne("AdvicerApp.Core.Entities.Menu", "Menu")
+                        .WithMany("MenuItems")
+                        .HasForeignKey("MenuId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Menu");
+                });
+
             modelBuilder.Entity("AdvicerApp.Core.Entities.Rating", b =>
                 {
                     b.HasOne("AdvicerApp.Core.Entities.Restaurant", "Restaurant")
@@ -615,6 +664,11 @@ namespace AdvicerApp.DAL.Migrations
             modelBuilder.Entity("AdvicerApp.Core.Entities.Comment", b =>
                 {
                     b.Navigation("Children");
+                });
+
+            modelBuilder.Entity("AdvicerApp.Core.Entities.Menu", b =>
+                {
+                    b.Navigation("MenuItems");
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Restaurant", b =>
