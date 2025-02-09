@@ -40,7 +40,7 @@ public class RatingService(IRatingRepository _repo, IRestaurantRepository _restR
 
     public async Task UpdateAsync(int ratingId, RatingUpdateDto dto)
     {
-        var rating = await _repo.GetByIdAsync(ratingId, x => new Rating { Id = x.Id }, false, false);
+        var rating = await _repo.GetByIdAsync(ratingId, x => new Rating { Id = x.Id,Score = x.Score }, false, false);
         if (rating == null) throw new NotFoundException<Rating>();
         rating.Score = dto.Score;
         await _repo.SaveAsync();

@@ -67,6 +67,7 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
     {
         var restaurants = await _repo.GetAllAsync(x => new RestaurantGetDto
         {
+            Id = x.Id,
             Address = x.Address,
             Phone = x.Phone,
             Name = x.Name,
@@ -115,6 +116,10 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
             (id, x => new Restaurant
             {
                 Id = id,
+                Name = x.Name,
+                Description = x.Description,
+                CategoryId = x.CategoryId,
+                Address = x.Address,
                 Image = x.Image,
                 RestaurantImages = x.RestaurantImages
             }, false, false);

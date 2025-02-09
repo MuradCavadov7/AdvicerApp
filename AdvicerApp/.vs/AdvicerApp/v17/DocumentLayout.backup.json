@@ -3,40 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Migrations\\20250208114630_ChangeMenuTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AdvicerApp.DAL\\Migrations\\20250208114630_ChangeMenuTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\contexts\\advicerappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\contexts\\advicerappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\implements\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\implements\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\interface\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\interface\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\configuration\\menuconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\configuration\\menuconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\profiles\\commentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\profiles\\commentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\configuration\\menuitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\configuration\\menuitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\dtos\\commentdtos\\commentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\dtos\\commentdtos\\commentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\repositories\\imenuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\repositories\\imenuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\dtos\\commentdtos\\commentgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\dtos\\commentdtos\\commentgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\repositories\\menuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\repositories\\menuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\entities\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\entities\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\entities\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\entities\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\dtos\\commentdtos\\commentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\dtos\\commentdtos\\commentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,118 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250208114630_ChangeMenuTable.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Migrations\\20250208114630_ChangeMenuTable.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Migrations\\20250208114630_ChangeMenuTable.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Migrations\\20250208114630_ChangeMenuTable.cs",
-              "RelativeToolTip": "AdvicerApp.DAL\\Migrations\\20250208114630_ChangeMenuTable.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\ServiceRegistration.cs*",
+              "RelativeToolTip": "AdvicerApp.BL\\ServiceRegistration.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBMAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:46:31.412Z",
+              "WhenOpened": "2025-02-09T13:58:30.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdvicerAppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Contexts\\AdvicerAppDbContext.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Contexts\\AdvicerAppDbContext.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Contexts\\AdvicerAppDbContext.cs",
-              "RelativeToolTip": "AdvicerApp.DAL\\Contexts\\AdvicerAppDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:44:06.981Z",
+              "WhenOpened": "2025-02-09T13:41:03.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.DAL\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\ServiceRegistration.cs",
-              "RelativeToolTip": "AdvicerApp.DAL\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
+              "Title": "ICommentService.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Interface\\ICommentService.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Interface\\ICommentService.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Interface\\ICommentService.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\Services\\Interface\\ICommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:43:36.514Z",
+              "WhenOpened": "2025-02-09T13:39:29.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MenuConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Configuration\\MenuConfiguration.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Configuration\\MenuConfiguration.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Configuration\\MenuConfiguration.cs",
-              "RelativeToolTip": "AdvicerApp.DAL\\Configuration\\MenuConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Title": "CommentProfile.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Profiles\\CommentProfile.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\Profiles\\CommentProfile.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Profiles\\CommentProfile.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\Profiles\\CommentProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:42:40.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MenuItemConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Configuration\\MenuItemConfiguration.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Configuration\\MenuItemConfiguration.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Configuration\\MenuItemConfiguration.cs",
-              "RelativeToolTip": "AdvicerApp.DAL\\Configuration\\MenuItemConfiguration.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:22:56.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MenuItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\MenuItemRepository.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Repositories\\MenuItemRepository.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\MenuItemRepository.cs",
-              "RelativeToolTip": "AdvicerApp.DAL\\Repositories\\MenuItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:21:42.806Z",
+              "WhenOpened": "2025-02-09T13:38:28.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IMenuItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IMenuItemRepository.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.Core\\Repositories\\IMenuItemRepository.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IMenuItemRepository.cs",
-              "RelativeToolTip": "AdvicerApp.Core\\Repositories\\IMenuItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAA==",
+              "Title": "CommentGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\CommentDtos\\CommentGetDto.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\DTOs\\CommentDtos\\CommentGetDto.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\CommentDtos\\CommentGetDto.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\DTOs\\CommentDtos\\CommentGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:20:12.136Z",
+              "WhenOpened": "2025-02-09T13:09:27.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Entities\\MenuItem.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.Core\\Entities\\MenuItem.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Entities\\MenuItem.cs",
-              "RelativeToolTip": "AdvicerApp.Core\\Entities\\MenuItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "CommentUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\CommentDtos\\CommentUpdateDto.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\DTOs\\CommentDtos\\CommentUpdateDto.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\CommentDtos\\CommentUpdateDto.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\DTOs\\CommentDtos\\CommentUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:12:02.258Z",
+              "WhenOpened": "2025-02-09T13:09:17.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Entities\\Menu.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.Core\\Entities\\Menu.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Entities\\Menu.cs",
-              "RelativeToolTip": "AdvicerApp.Core\\Entities\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CommentCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\CommentDtos\\CommentCreateDto.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\DTOs\\CommentDtos\\CommentCreateDto.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\CommentDtos\\CommentCreateDto.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\DTOs\\CommentDtos\\CommentCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:09:27.123Z",
+              "WhenOpened": "2025-02-09T13:09:02.834Z",
               "EditorCaption": ""
             }
           ]

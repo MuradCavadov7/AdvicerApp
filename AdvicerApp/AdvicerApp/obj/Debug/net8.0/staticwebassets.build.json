@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0io1jy/h4BKpYG3u2+53G3vjhqoHoTgg2UGdY0bcrjc=",
+  "Hash": "nriPSwIW/tD+wLFjw277G1PdpFUYeWiV1i9NElFkUmA=",
   "Source": "AdvicerApp",
   "BasePath": "_content/AdvicerApp",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\menuItem\\l221uxka.iin.png",
+      "SourceId": "AdvicerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
+      "BasePath": "_content/AdvicerApp",
+      "RelativePath": "imgs/menuItem/l221uxka.iin.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\menuItem\\l221uxka.iin.png"
+    },
     {
       "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\1jge21tx.kkd.jpg",
       "SourceId": "AdvicerApp",

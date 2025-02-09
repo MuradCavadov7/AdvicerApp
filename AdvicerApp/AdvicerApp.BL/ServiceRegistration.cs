@@ -16,6 +16,9 @@ public static class ServiceRegistration
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddScoped<IRestaurantService, RestaurantService>();
         services.AddScoped<IRatingService, RatingService>();
+        services.AddScoped<IMenuItemService, MenuItemService>();
+        services.AddScoped<ICommentService, CommentService>();
+        services.AddScoped<IMenuService, MenuService>();
         services.AddScoped<IJwtHandler, JwtHandler>();
         services.AddScoped<ICurrentUser, CurrentUser>();
         services.AddMemoryCache();
