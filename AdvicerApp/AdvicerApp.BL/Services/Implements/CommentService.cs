@@ -9,18 +9,18 @@ using System.Xml.Linq;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class CommentService(ICommentRepository _repo,ICurrentUser _user,IRestaurantRepository _restRepo,IMapper _mapper) : ICommentService
+public class CommentService(ICommentRepository _repo, ICurrentUser _user, IRestaurantRepository _restRepo, IMapper _mapper) : ICommentService
 {
     private string _userId = _user.GetId();
     public async Task<int> CreateAsync(CommentCreateDto dto)
     {
         if (!await _restRepo.IsExistAsync(dto.RestaurantId)) throw new NotFoundException<Restaurant>();
         var comment = _mapper.Map<Comment>(dto);
-        comment.UserId = _userId;
+        if (comment.UserId != _user.GetId()) throw new UnAuthorizedAccessException("You can only edit your own comments.");
         Comment? parent = null;
         if (dto.ParentId.HasValue)
         {
-            parent = await _repo.GetByIdAsync(dto.ParentId.Value,x=>x.Parent,false,false);
+            parent = await _repo.GetByIdAsync(dto.ParentId.Value, x => x.Parent, false, false);
             if (parent is null)
                 throw new NotFoundException<Comment>();
         }
@@ -30,23 +30,65 @@ public class CommentService(ICommentRepository _repo,ICurrentUser _user,IRestaur
         return comment.Id;
     }
 
-    public Task DeleteAsync(int id)
+    public async Task DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        var comment = await _repo.GetByIdAsync(id, x => new Comment { Id = x.Id }, false, false);
+        if (comment == null) throw new NotFoundException<Comment>();
+        _repo.Delete(comment);
+        await _repo.SaveAsync();
     }
 
-    public Task<IEnumerable<CommentGetDto>> GetAllAsync()
+    public async Task<IEnumerable<CommentGetDto>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        var comments = await _repo.GetAllAsync(x => new CommentGetDto
+        {
+            Id = x.Id,
+            ParentId = x.ParentId,
+            Text = x.Text,
+            Username = x.User.UserName,
+            Replies = x.Children.Select(r => new CommentGetDto
+            {
+                Id = r.Id,
+                Text = r.Text,
+                Username = r.User.UserName,
+                ParentId = r.ParentId
+            }).ToList()
+        }, true, false);
+        return comments;
     }
 
-    public Task<CommentGetDto> GetByIdAsync(int id)
+    public async Task<CommentGetDto> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        var comment = await _repo.GetByIdAsync(id, x => new CommentGetDto
+        {
+            Id = x.Id,
+            ParentId = x.ParentId,
+            Text = x.Text,
+            Username = x.User.UserName,
+            Replies = x.Children.Select(r => new CommentGetDto
+            {
+                Id = r.Id,
+                Text = r.Text,
+                Username = r.User.UserName,
+                ParentId = r.ParentId
+            }).ToList()
+        }, true, false);
+        return comment;
     }
 
-    public Task UpdateAsync(int id, CommentUpdateDto dto)
+    public async Task UpdateAsync(int id, CommentUpdateDto dto)
     {
-        throw new NotImplementedException();
+        var comment = await _repo.GetByIdAsync(id, x => new Comment
+        {
+            Id = x.Id,
+            ParentId = x.ParentId,
+            Children = x.Children
+        }, false, false);
+        if (comment == null) throw new NotFoundException<Comment>();
+        if (comment.UserId != _user.GetId()) throw new UnAuthorizedAccessException("You can only edit your own comments.");
+        _mapper.Map(dto, comment);
+        comment.UpdatedTime = DateTime.UtcNow;
+        await _repo.AddAsync(comment);
+        await _repo.SaveAsync();
     }
 }

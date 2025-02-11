@@ -33,6 +33,14 @@ public class CurrentUser(IHttpContextAccessor _httpContext) : ICurrentUser
         return value;
     }
 
+    public string GetRole()
+    {
+        var value = User.FindFirst(x=>x.Type == ClaimTypes.Role)?.Value;
+        if(value is null)
+            throw new NotFoundException<User>();
+        return value;
+    }
+
     public string GetUserName()
     {
         var value = User.FindFirst(x => x.Type == ClaimTypes.Name)?.Value;

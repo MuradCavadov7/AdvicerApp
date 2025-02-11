@@ -21,6 +21,7 @@ public static class ServiceRegistration
         services.AddScoped<IMenuService, MenuService>();
         services.AddScoped<IJwtHandler, JwtHandler>();
         services.AddScoped<ICurrentUser, CurrentUser>();
+        services.AddScoped<IEmailSend, EmailSend>();
         services.AddMemoryCache();
         return services;
     }

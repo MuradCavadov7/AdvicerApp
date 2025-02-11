@@ -25,6 +25,16 @@ public class AccountsController(IAuthService _service) : ControllerBase
         await _service.CRole();
         return Ok();
     }
-
+    [HttpPost]
+    public async Task<IActionResult> SendVerificationCode(string email)
+    {
+        return Ok(await _service.SendVerificationCodeAsync(email));
+    }
+    [HttpPost]
+    public async Task<IActionResult> VerifyEmail(string email, int code)
+    {
+        await _service.VerifyEmailAsync(email, code);
+        return Ok("Email is confirmed");
+    }
 
 }

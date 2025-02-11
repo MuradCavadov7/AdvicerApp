@@ -1,5 +1,6 @@
 ﻿using AdvicerApp.BL.DTOs.Options;
 using AdvicerApp.BL.Exceptions;
+using AdvicerApp.BL.Helper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.Extensions.Options;
@@ -43,6 +44,12 @@ public static class ServiceRegistration
 
         });
         return app;
+    }
+    public static IServiceCollection AddSmtpOptions(this IServiceCollection services,IConfiguration configuration)
+    {
+        var opt = new SmtpOptions();
+        services.Configure<SmtpOptions>(configuration.GetSection(SmtpOptions.Name));
+        return services;
     }
     public static IServiceCollection AddJwtOptions(this IServiceCollection services, IConfiguration configuration)
     {

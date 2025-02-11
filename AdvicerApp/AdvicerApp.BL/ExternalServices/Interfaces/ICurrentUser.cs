@@ -6,4 +6,5 @@ public interface ICurrentUser
     string GetUserName();
     string GetEmail();
     string GetFullname();
+    string GetRole();
 }

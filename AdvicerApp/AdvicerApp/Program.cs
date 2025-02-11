@@ -38,7 +38,7 @@ public class Program
         builder.Services.AddAutoMapper();
         builder.Services.AddRepositories();
         builder.Services.AddHttpContextAcs();
-        
+        builder.Services.AddSmtpOptions(builder.Configuration);
         builder.Services.AddJwtOptions(builder.Configuration);
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(options =>
