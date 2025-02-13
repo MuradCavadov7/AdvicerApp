@@ -1,4 +1,5 @@
 ﻿using AdvicerApp.Core.Entities;
+using AdvicerApp.Core.Entities.Common;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,7 @@ public class AdvicerAppDbContext : IdentityDbContext<User>
     public DbSet<Category> Categories { get; set; }
     public DbSet<RestaurantImage> RestaurantImages {  get; set; }
     public DbSet<MenuItem> MenuItems { get; set; }
+    public DbSet<OwnerRequest> OwnerRequests { get; set; }
     public AdvicerAppDbContext(DbContextOptions options) : base(options)
     {
     }

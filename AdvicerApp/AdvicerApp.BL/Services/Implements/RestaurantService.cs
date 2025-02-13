@@ -1,4 +1,5 @@
-﻿using AdvicerApp.BL.DTOs.RestaurantDtos;
+﻿using AdvicerApp.BL.DTOs.CommentDtos;
+using AdvicerApp.BL.DTOs.RestaurantDtos;
 using AdvicerApp.BL.Exceptions.Common;
 using AdvicerApp.BL.Extensions;
 using AdvicerApp.BL.ExternalServices.Interfaces;
@@ -7,6 +8,7 @@ using AdvicerApp.Core.Entities;
 using AdvicerApp.Core.Repositories;
 using AutoMapper;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdvicerApp.BL.Services.Implements;
 
@@ -41,7 +43,9 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
 
     public async Task DeleteAsync(int id)
     {
-        var restaurant = await _repo.GetByIdAsync(id, x => new Restaurant { Id = id,
+        var restaurant = await _repo.GetByIdAsync(id, x => new Restaurant
+        {
+            Id = id,
             Image = x.Image,
             RestaurantImages = x.RestaurantImages
         }, false, false);
@@ -68,6 +72,7 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
         var restaurants = await _repo.GetAllAsync(x => new RestaurantGetDto
         {
             Id = x.Id,
+            Location = x.Location,
             Address = x.Address,
             Phone = x.Phone,
             Name = x.Name,
@@ -75,9 +80,15 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
             Image = x.Image,
             Images = x.RestaurantImages.Select(img => img.ImageUrl).ToList(),
             Description = x.Description,
-            AverageRating = Convert.ToDecimal(x.Ratings.Any() ? x.Ratings.Average(r=>r.Score) : 0 ),
-            OwnerId = x.OwnerId
-        },asNoTrack:true,isDeleted:false);
+            AverageRating = Convert.ToDecimal(x.Ratings.Any() ? x.Ratings.Average(r => r.Score) : 0),
+            OwnerId = x.OwnerId,
+            Comments = x.Comments.Where(c => c.ParentId == 0)
+            .Select(c => new CommentGetDto
+            {
+                Id = c.Id,
+                Text = c.Text
+            }).ToList()
+        }, asNoTrack: true, isDeleted: false);
 
         return restaurants;
     }
@@ -86,6 +97,8 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
     {
         var restaurant = await _repo.GetByIdAsync(id, x => new RestaurantGetDto
         {
+            Id = x.Id,
+            Location = x.Location,
             Address = x.Address,
             Phone = x.Phone,
             Name = x.Name,
@@ -97,7 +110,44 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
         }, asNoTrack: true, isDeleted: false);
         if (restaurant == null) throw new NotFoundException<Restaurant>("Restaurant not found");
         return restaurant;
-        
+
+    }
+
+    public async Task<List<RestaurantGetDto>> GetFilteredRestaurantsAsync(string? category, string? address, string? name)
+    {
+        var query = _repo.GetQuery(x=>new RestaurantGetDto
+        {
+            Id = x.Id,
+            Location = x.Location,
+            Address = x.Address,
+            Phone = x.Phone,
+            Name = x.Name,
+            CategoryName = x.Category.Name,
+            Image = x.Image,
+            Images = x.RestaurantImages.Select(img => img.ImageUrl).ToList(),
+            Description = x.Description,
+            AverageRating = Convert.ToDecimal(x.Ratings.Any() ? x.Ratings.Average(r => r.Score) : 0),
+            OwnerId = x.OwnerId,
+            Comments = x.Comments.Where(c => c.ParentId == 0)
+            .Select(c => new CommentGetDto
+            {
+                Id = c.Id,
+                Text = c.Text
+            }).ToList()
+        },true,false);
+        if (!String.IsNullOrWhiteSpace(name))
+        {
+            query = query.Where(x=>x.Name.Contains(name)).OrderBy(x=>x.Name);
+        }
+        if (!String.IsNullOrWhiteSpace(category))
+        {
+            query = query.Where(x=>x.CategoryName == category);
+        }
+        if (!String.IsNullOrWhiteSpace(address))
+        {
+            query = query.Where(x=>x.Location.Contains(address));
+        }
+        return await query.ToListAsync();
     }
 
     public async Task UpdateAsync(int id, UpdateResturantDto dto)
@@ -119,6 +169,7 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
                 Name = x.Name,
                 Description = x.Description,
                 CategoryId = x.CategoryId,
+                Location = x.Location,
                 Address = x.Address,
                 Image = x.Image,
                 RestaurantImages = x.RestaurantImages

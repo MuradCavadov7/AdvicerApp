@@ -28,6 +28,13 @@ public class UpdateRestaurantDtoValidator : AbstractValidator<UpdateResturantDto
             .MaximumLength(128)
             .WithMessage("Adress can be maximum 128 characters");
 
+        RuleFor(x => x.Location)
+            .NotNull()
+            .NotEmpty()
+            .WithMessage("Location cannot be empty")
+            .MaximumLength(64)
+            .WithMessage("Adress can be maximum 64 characters");
+
         RuleFor(x => x.Phone)
             .NotNull()
             .NotEmpty()

@@ -35,6 +35,8 @@ public class CategoryService(ICategoryRepository _repo, IMapper _mapper) : ICate
             Name = x.Name,
             Restaurants = x.Restaurants.Select(r => new RestaurantGetDto
             {
+                Id = r.Id,
+                Location = r.Location,
                 Address = r.Address,
                 Phone = r.Phone,
                 Name = r.Name,

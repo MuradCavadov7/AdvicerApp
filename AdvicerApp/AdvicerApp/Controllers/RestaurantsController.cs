@@ -1,5 +1,6 @@
 ﻿using AdvicerApp.BL.DTOs.RestaurantDtos;
 using AdvicerApp.BL.Helper;
+using AdvicerApp.BL.Services.Implements;
 using AdvicerApp.BL.Services.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -54,6 +55,13 @@ namespace AdvicerApp.Controllers
         {
             await _service.UpdateAsync(id, dto);
             return Ok();
+        }
+        [AllowAnonymous]
+        [HttpGet("filter")]
+        public async Task<IActionResult> FilterRestaurants([FromQuery] string? category, [FromQuery] string? address, [FromQuery] string? name)
+        {
+            var restaurants = await _service.GetFilteredRestaurantsAsync(category, address, name);
+            return Ok(restaurants);
         }
     }
 }

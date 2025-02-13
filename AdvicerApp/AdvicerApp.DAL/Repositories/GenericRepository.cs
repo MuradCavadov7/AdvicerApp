@@ -131,6 +131,21 @@ public class GenericRepository<T>(AdvicerAppDbContext _context) : IGenericReposi
         return await query.Select(select).FirstOrDefaultAsync();
     }
 
+    public IQueryable<U> GetQuery<U>(Expression<Func<T, U>> select, bool asNoTracking = true, bool isDeleted = false)
+    {
+        IQueryable<T> query = Table;
+        if (!isDeleted)
+        {
+            query = query.Where(x => x.IsDeleted == false);
+        }
+        if (asNoTracking)
+        {
+            query = query.AsNoTracking();
+        }
+        return query.Select(select);
+
+    }
+
     public async Task<IEnumerable<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = false)
     {
         IQueryable<T> query = Table.Where(expression);

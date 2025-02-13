@@ -9,4 +9,5 @@ public interface IRestaurantService
     Task DeleteAsync(int id);
     Task<IEnumerable<RestaurantGetDto>> GetAllAsync();
     Task<RestaurantGetDto> GetByIdAsync(int id);
+    Task<List<RestaurantGetDto>> GetFilteredRestaurantsAsync(string? category, string? address, string? name);
 }

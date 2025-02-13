@@ -14,6 +14,7 @@ public static class ServiceRegistration
         services.AddScoped<ICommentRepository,CommentRepository>();
         services.AddScoped<IRatingRepository,RatingRepository>();   
         services.AddScoped<IMenuItemRepository,MenuItemRepository>();
+        services.AddScoped<IOwnerRequestRepository,OwnerRequestRepository>();
 
         return services;
     }

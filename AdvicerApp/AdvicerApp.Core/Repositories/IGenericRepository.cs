@@ -21,6 +21,7 @@ public interface IGenericRepository<T> where T : BaseEntity, new()
     Task<T?> GetFirstAsync(Expression<Func<T, bool>> expression, Expression<Func<T, T>> select, bool asNoTrack = true, bool isDeleted = false);
     //Task<U?> GetFirstAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select,bool isDeleted = false);
 
+    IQueryable<U> GetQuery<U>(Expression<Func<T, U>> select, bool asNoTracking = true,bool isDeleted = false);
     Task<bool> IsExistAsync(int id);
     Task<bool> IsExistAsync(Expression<Func<T, bool>> expression);
 

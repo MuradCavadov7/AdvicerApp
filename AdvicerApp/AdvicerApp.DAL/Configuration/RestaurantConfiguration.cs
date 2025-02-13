@@ -22,6 +22,10 @@ public class RestaurantConfiguration : IEntityTypeConfiguration<Restaurant>
             .IsRequired()
             .HasMaxLength(128);
 
+        builder.Property(x => x.Location)
+            .IsRequired()
+            .HasMaxLength(64);
+
         builder.Property(x=>x.Image)
             .IsRequired()
             .HasMaxLength(256);

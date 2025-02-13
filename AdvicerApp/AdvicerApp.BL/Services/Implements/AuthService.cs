@@ -11,7 +11,7 @@ using System.Text;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler, RoleManager<IdentityRole> _roleManager, SignInManager<User> _signInManager, IMemoryCache _cache, IEmailSend _sendEmail) : IAuthService
+public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler, RoleManager<IdentityRole> _roleManager, SignInManager<User> _signInManager, IMemoryCache _cache, IEmailSend _sendEmail,IOwnerApproveService _ownerApproveService) : IAuthService
 {
     public async Task<string> RegisterAsync(RegisterDto dto)
     {
@@ -46,14 +46,7 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
         }
         else
         {
-            var roleResult = await _userManager.AddToRoleAsync(user, nameof(Role.Owner));
-            if (!roleResult.Succeeded)
-            {
-                foreach (var error in result.Errors)
-                {
-                    desc.Add(error.Description);
-                }
-            }
+            await _ownerApproveService.RequestApprovalAsync(dto.OwnerDocument);
         }
         await SendVerificationCodeAsync(user.Email);
 

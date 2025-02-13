@@ -10,5 +10,6 @@ public class User : IdentityUser
     public ICollection<Restaurant> Restaurants { get; set; }
     public ICollection<Comment> Comments { get; set; }
     public ICollection<Rating> Ratings { get; set; }
+    public ICollection<OwnerRequest> OwnerRequests { get; set; }
 
 }

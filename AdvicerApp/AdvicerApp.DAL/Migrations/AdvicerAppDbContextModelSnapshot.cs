@@ -92,6 +92,42 @@ namespace AdvicerApp.DAL.Migrations
                     b.ToTable("Comments");
                 });
 
+            modelBuilder.Entity("AdvicerApp.Core.Entities.Common.OwnerRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DocumentUrl")
+                        .IsRequired()
+                        .HasMaxLength(512)
+                        .HasColumnType("nvarchar(512)");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("OwnerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("OwnerRequests");
+                });
+
             modelBuilder.Entity("AdvicerApp.Core.Entities.Menu", b =>
                 {
                     b.Property<int>("Id")
@@ -243,6 +279,11 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -534,6 +575,17 @@ namespace AdvicerApp.DAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AdvicerApp.Core.Entities.Common.OwnerRequest", b =>
+                {
+                    b.HasOne("AdvicerApp.Core.Entities.User", "Owner")
+                        .WithMany("OwnerRequests")
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owner");
+                });
+
             modelBuilder.Entity("AdvicerApp.Core.Entities.Menu", b =>
                 {
                     b.HasOne("AdvicerApp.Core.Entities.Restaurant", "Restaurant")
@@ -685,6 +737,8 @@ namespace AdvicerApp.DAL.Migrations
             modelBuilder.Entity("AdvicerApp.Core.Entities.User", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("OwnerRequests");
 
                     b.Navigation("Ratings");
 
