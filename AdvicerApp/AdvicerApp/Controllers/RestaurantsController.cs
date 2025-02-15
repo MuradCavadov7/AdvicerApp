@@ -65,7 +65,7 @@ namespace AdvicerApp.Controllers
         }
 
         [Authorize(Roles = "Owner")]
-        [HttpDelete("{restaurantId}")]
+        [HttpDelete("image/{restaurantId}")]
         public async Task<IActionResult> DeleteImage(int restaurantId, ICollection<int> imgIds)
         {
             await _service.DeleteImagesAsync(restaurantId, imgIds);

@@ -13,7 +13,7 @@ namespace AdvicerApp.BL.Services.Implements;
 
 public class OwnerApproveService(IOwnerRequestRepository _repo, UserManager<User> _userManager,IWebHostEnvironment _env,ICurrentUser _user) : IOwnerApproveService
 {
-    private string _userId = _user.GetId();
+    private string _userId => _user.GetId();
     public async Task RequestApprovalAsync(IFormFile document)
     {
         var ownerId = _userId;

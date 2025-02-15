@@ -738,5 +738,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdvicerApp.Controllers.RestaurantsController",
+    "Method": "DeleteImage",
+    "RelativePath": "api/Restaurants/image/{restaurantId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restaurantId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "imgIds",
+        "Type": "System.Collections.Generic.ICollection\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
