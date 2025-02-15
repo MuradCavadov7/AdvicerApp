@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\implements\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\implements\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{498F8223-DEF7-4FD3-82F5-F1161C5D653B}|AdvicerApp\\AdvicerApp.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498F8223-DEF7-4FD3-82F5-F1161C5D653B}|AdvicerApp\\AdvicerApp.csproj|solutionrelative:advicerapp\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\extensions\\roleextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\extensions\\roleextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\implements\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\implements\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\dtos\\restaurantdtos\\restaurantgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\dtos\\restaurantdtos\\restaurantgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\interface\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\interface\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\dtos\\restaurantdtos\\updateresturantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\dtos\\restaurantdtos\\updateresturantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.core\\repositories\\irestaurantimagesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70387AF2-7342-4043-9D0B-7C3CC27D325B}|AdvicerApp.Core\\AdvicerApp.Core.csproj|solutionrelative:advicerapp.core\\repositories\\irestaurantimagesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\dtos\\restaurantdtos\\createrestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\dtos\\restaurantdtos\\createrestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.dal\\repositories\\restaurantimagesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACE7B6E7-F98B-4F83-B6D9-F64372AE1729}|AdvicerApp.DAL\\AdvicerApp.DAL.csproj|solutionrelative:advicerapp.dal\\repositories\\restaurantimagesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\CategoryService.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\CategoryService.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\CategoryService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAswCYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:27:16.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RestaurantService.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAswEoAAAAiAAAAAAAAAA==",
+              "Title": "RoleExtension.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Extensions\\RoleExtension.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\Extensions\\RoleExtension.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Extensions\\RoleExtension.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\Extensions\\RoleExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:25:16.312Z",
+              "WhenOpened": "2025-02-15T15:57:32.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateResturantDto.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\RestaurantDtos\\UpdateResturantDto.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\DTOs\\RestaurantDtos\\UpdateResturantDto.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\RestaurantDtos\\UpdateResturantDto.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\DTOs\\RestaurantDtos\\UpdateResturantDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RestaurantsController.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\Controllers\\RestaurantsController.cs",
+              "RelativeDocumentMoniker": "AdvicerApp\\Controllers\\RestaurantsController.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\Controllers\\RestaurantsController.cs",
+              "RelativeToolTip": "AdvicerApp\\Controllers\\RestaurantsController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAUwCEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:23:39.861Z",
+              "WhenOpened": "2025-02-15T15:54:37.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RestaurantGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\RestaurantDtos\\RestaurantGetDto.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\DTOs\\RestaurantDtos\\RestaurantGetDto.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\RestaurantDtos\\RestaurantGetDto.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\DTOs\\RestaurantDtos\\RestaurantGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RestaurantImagesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\RestaurantImagesRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.DAL\\Repositories\\RestaurantImagesRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.DAL\\Repositories\\RestaurantImagesRepository.cs",
+              "RelativeToolTip": "AdvicerApp.DAL\\Repositories\\RestaurantImagesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:23:34.459Z",
+              "WhenOpened": "2025-02-15T15:16:10.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateRestaurantDto.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\RestaurantDtos\\CreateRestaurantDto.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\DTOs\\RestaurantDtos\\CreateRestaurantDto.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\RestaurantDtos\\CreateRestaurantDto.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\DTOs\\RestaurantDtos\\CreateRestaurantDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "IRestaurantImagesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IRestaurantImagesRepository.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.Core\\Repositories\\IRestaurantImagesRepository.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.Core\\Repositories\\IRestaurantImagesRepository.cs",
+              "RelativeToolTip": "AdvicerApp.Core\\Repositories\\IRestaurantImagesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:23:18.66Z",
+              "WhenOpened": "2025-02-15T15:15:27.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRestaurantService.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Interface\\IRestaurantService.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Interface\\IRestaurantService.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Interface\\IRestaurantService.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\Services\\Interface\\IRestaurantService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T14:40:09.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RestaurantService.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAowNkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T14:17:53.262Z",
               "EditorCaption": ""
             }
           ]

@@ -15,6 +15,7 @@ public static class ServiceRegistration
         services.AddScoped<IRatingRepository,RatingRepository>();   
         services.AddScoped<IMenuItemRepository,MenuItemRepository>();
         services.AddScoped<IOwnerRequestRepository,OwnerRequestRepository>();
+        services.AddScoped<IRestaurantImagesRepository,RestaurantImagesRepository>();
 
         return services;
     }

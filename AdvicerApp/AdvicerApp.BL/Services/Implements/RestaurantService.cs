@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICategoryRepository _catRepo, IWebHostEnvironment _env, ICurrentUser _user) : IRestaurantService
+public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICategoryRepository _catRepo,IRestaurantImagesRepository _imgRepo, IWebHostEnvironment _env, ICurrentUser _user) : IRestaurantService
 {
     private string _userId = _user.GetId();
 
@@ -51,16 +51,16 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
         }, false, false);
         if (restaurant == null) throw new NotFoundException<Restaurant>("Restaurant is not found");
         string imagePath = Path.Combine(_env.WebRootPath, "imgs", "restaurant", restaurant.Image);
-        if (System.IO.File.Exists(imagePath))
+        if (File.Exists(imagePath))
         {
-            System.IO.File.Delete(imagePath);
+            File.Delete(imagePath);
         }
         foreach (var image in restaurant.RestaurantImages)
         {
             string imagePaths = Path.Combine(_env.WebRootPath, "imgs", "restaurant", image.ImageUrl);
-            if (System.IO.File.Exists(imagePaths))
+            if (File.Exists(imagePaths))
             {
-                System.IO.File.Delete(imagePaths);
+                File.Delete(imagePaths);
             }
         }
         _repo.Delete(restaurant);
@@ -124,7 +124,7 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
             Name = x.Name,
             CategoryName = x.Category.Name,
             Image = x.Image,
-            Images = x.RestaurantImages.Select(img => img.ImageUrl).ToList(),
+            Images = x.RestaurantImages.Select(img =>img.ImageUrl).ToList(),
             Description = x.Description,
             AverageRating = Convert.ToDecimal(x.Ratings.Any() ? x.Ratings.Average(r => r.Score) : 0),
             OwnerId = x.OwnerId,
@@ -174,22 +174,20 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
                 Image = x.Image,
                 RestaurantImages = x.RestaurantImages
             }, false, false);
+
         if (!await _catRepo.IsExistAsync(dto.CategoryId)) throw new NotFoundException<Category>("Category is not found");
+
         _mapper.Map(dto, restaurant);
+
         if (restaurant == null) throw new NotFoundException<Restaurant>("Restaurant is not found");
+
         string imagePath = Path.Combine(_env.WebRootPath, "imgs", "restaurant", restaurant.Image);
-        if (System.IO.File.Exists(imagePath))
+
+        if (File.Exists(imagePath))
         {
-            System.IO.File.Delete(imagePath);
+            File.Delete(imagePath);
         }
-        foreach (var image in restaurant.RestaurantImages)
-        {
-            string imagePaths = Path.Combine(_env.WebRootPath, "imgs", "restaurant", image.ImageUrl);
-            if (System.IO.File.Exists(imagePaths))
-            {
-                System.IO.File.Delete(imagePaths);
-            }
-        }
+
         restaurant.Image = await dto.File!.UploadAsync(_env.WebRootPath, "imgs", "restaurant");
         var restaurantImages = new List<RestaurantImage>();
 
@@ -201,8 +199,25 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
                 var imageUrl = await file.UploadAsync(_env.WebRootPath, "imgs", "restaurant");
                 restaurantImages.Add(new RestaurantImage { ImageUrl = imageUrl });
             }
-
         }
         await _repo.SaveAsync();
+    }
+
+    public async Task DeleteImagesAsync(int restauranId,ICollection<int> imgIds)
+    {
+        bool restaurant = await _repo.IsExistAsync(restauranId);
+        if (!restaurant) throw new NotFoundException<Restaurant>();
+
+        var imgs = await _imgRepo.GetWhereAsync(x => x.RestaurantId == restauranId, y => y, false, false);
+        string imagePath = string.Empty;
+        foreach(var img in imgs)
+        {
+            imagePath = Path.Combine(_env.WebRootPath, "imgs", "restaurant", img.ImageUrl);
+            if (File.Exists(imagePath))
+            {
+                File.Delete(imagePath);
+            }
+        }
+        await _imgRepo.DeleteRangeAsync(imgs);
     }
 }

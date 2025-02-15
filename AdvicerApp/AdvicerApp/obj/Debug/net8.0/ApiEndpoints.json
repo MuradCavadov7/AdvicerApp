@@ -604,6 +604,11 @@
         "IsRequired": false
       },
       {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "Address",
         "Type": "System.String",
         "IsRequired": false
@@ -646,6 +651,11 @@
       },
       {
         "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
         "Type": "System.String",
         "IsRequired": false
       },

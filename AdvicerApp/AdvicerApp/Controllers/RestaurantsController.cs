@@ -9,7 +9,7 @@ namespace AdvicerApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   
+
     public class RestaurantsController(IRestaurantService _service) : ControllerBase
     {
         [AllowAnonymous]
@@ -23,7 +23,7 @@ namespace AdvicerApp.Controllers
         [Authorize(Roles = "Owner")]
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> Create([FromForm]CreateRestaurantDto dto)
+        public async Task<IActionResult> Create([FromForm] CreateRestaurantDto dto)
         {
             return Ok(await _service.CreateAsync(dto));
         }
@@ -62,6 +62,14 @@ namespace AdvicerApp.Controllers
         {
             var restaurants = await _service.GetFilteredRestaurantsAsync(category, address, name);
             return Ok(restaurants);
+        }
+
+        [Authorize(Roles = "Owner")]
+        [HttpDelete("{restaurantId}")]
+        public async Task<IActionResult> DeleteImage(int restaurantId, ICollection<int> imgIds)
+        {
+            await _service.DeleteImagesAsync(restaurantId, imgIds);
+            return Ok();
         }
     }
 }

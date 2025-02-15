@@ -14,11 +14,9 @@ namespace AdvicerApp.BL.Services.Implements;
 public class OwnerApproveService(IOwnerRequestRepository _repo, UserManager<User> _userManager,IWebHostEnvironment _env,ICurrentUser _user) : IOwnerApproveService
 {
     private string _userId = _user.GetId();
-    public async Task RequestApprovalAsync( IFormFile document)
+    public async Task RequestApprovalAsync(IFormFile document)
     {
         var ownerId = _userId;
-        var owner  = await _userManager.FindByIdAsync(ownerId);
-        if (owner == null) throw new NotFoundException<User>("Owner is not found");
 
         if (await _repo.IsExistAsync(x => x.OwnerId == ownerId)) throw new ExistsException<User>("Owner request already submitted");
         var documentUrl = await document.UploadAsync(_env.WebRootPath, "imgs", "ownerDocument");

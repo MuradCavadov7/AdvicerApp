@@ -25,13 +25,14 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             Fullname = dto.Fullname
         };
         var result = await _userManager.CreateAsync(user, dto.Password);
-        List<string> desc = new();
+        string desc = "";
         if (!result.Succeeded)
         {
             foreach (var error in result.Errors)
             {
-                desc.Add(error.Description);
+                desc += (" " + error.Description);
             }
+                throw new BadRequestException(desc);
         }
         if (!dto.IsRestaurantOwner)
         {
@@ -40,8 +41,9 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             {
                 foreach (var error in result.Errors)
                 {
-                    desc.Add(error.Description);
+                    desc += (" " + error.Description);
                 }
+                throw new BadRequestException(desc);
             }
         }
         else
@@ -72,7 +74,6 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             user = await _userManager.FindByNameAsync(dto.UsernameOrEmail);
         }
         if (user == null) throw new BadRequestException("Username or password is(are) wrong");
-        List<string> desc = new();
 
         var result = await _signInManager.CheckPasswordSignInAsync(user, dto.Password, false);
         if (!result.Succeeded)
@@ -97,7 +98,6 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
 
         user.EmailConfirmed = true;
         var result = await _userManager.UpdateAsync(user);
-        List<string> desc = new();
         if (!result.Succeeded)
         {
             StringBuilder sb = new StringBuilder();

@@ -82,7 +82,8 @@ public static class ServiceRegistration
                 IssuerSigningKey = signInKey,
                 ClockSkew = TimeSpan.Zero,
 
-                RoleClaimType = ClaimTypes.Role
+                RoleClaimType = ClaimTypes.Role,
+                NameClaimType = ClaimTypes.NameIdentifier
             };
         });
         return services;

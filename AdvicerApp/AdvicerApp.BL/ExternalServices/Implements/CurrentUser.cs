@@ -11,7 +11,7 @@ public class CurrentUser(IHttpContextAccessor _httpContext) : ICurrentUser
     ClaimsPrincipal? User = _httpContext.HttpContext?.User;
     public string GetEmail()
     {
-        var value = User.FindFirst(x => x.Type == ClaimTypes.Email)?.Value;
+        var value = User?.FindFirst(x => x.Type == ClaimTypes.Email)?.Value;
         if (value is null)
             throw new NotFoundException<User>();
         return value;
@@ -19,7 +19,7 @@ public class CurrentUser(IHttpContextAccessor _httpContext) : ICurrentUser
 
     public string GetFullname()
     {
-        var value = User.FindFirst(x => x.Type == ClaimTypes.GivenName)?.Value;
+        var value = User?.FindFirst(x => x.Type == ClaimTypes.GivenName)?.Value;
         if (value is null)
             throw new NotFoundException<User>();
         return value;
@@ -27,7 +27,7 @@ public class CurrentUser(IHttpContextAccessor _httpContext) : ICurrentUser
 
     public string GetId()
     {
-        var value = User.FindFirst(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+        var value = User?.FindFirst(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
         if (value is null)
             throw new NotFoundException<User>();
         return value;
@@ -35,7 +35,7 @@ public class CurrentUser(IHttpContextAccessor _httpContext) : ICurrentUser
 
     public string GetRole()
     {
-        var value = User.FindFirst(x=>x.Type == ClaimTypes.Role)?.Value;
+        var value = User?.FindFirst(x=>x.Type == ClaimTypes.Role)?.Value;
         if(value is null)
             throw new NotFoundException<User>();
         return value;
@@ -43,7 +43,7 @@ public class CurrentUser(IHttpContextAccessor _httpContext) : ICurrentUser
 
     public string GetUserName()
     {
-        var value = User.FindFirst(x => x.Type == ClaimTypes.Name)?.Value;
+        var value = User?.FindFirst(x => x.Type == ClaimTypes.Name)?.Value;
         if (value is null)
             throw new NotFoundException<User>();
         return value;

@@ -3,28 +3,42 @@ using AdvicerApp.BL.Exceptions.Common;
 using AdvicerApp.BL.ExternalServices.Interfaces;
 using AdvicerApp.BL.Services.Interface;
 using AdvicerApp.Core.Entities;
+using AdvicerApp.Core.Enums;
 using AdvicerApp.Core.Repositories;
 using AutoMapper;
-using System.Xml.Linq;
 
 namespace AdvicerApp.BL.Services.Implements;
 
 public class CommentService(ICommentRepository _repo, ICurrentUser _user, IRestaurantRepository _restRepo, IMapper _mapper) : ICommentService
 {
     private string _userId = _user.GetId();
+    private string _userRole = _user.GetRole();
     public async Task<int> CreateAsync(CommentCreateDto dto)
     {
         if (!await _restRepo.IsExistAsync(dto.RestaurantId)) throw new NotFoundException<Restaurant>();
         var comment = _mapper.Map<Comment>(dto);
-        if (comment.UserId != _user.GetId()) throw new UnAuthorizedAccessException("You can only edit your own comments.");
-        Comment? parent = null;
-        if (dto.ParentId.HasValue)
+        comment.UserId = _userId;
+        if (_userRole == nameof(Role.Owner))
         {
-            parent = await _repo.GetByIdAsync(dto.ParentId.Value, x => x.Parent, false, false);
-            if (parent is null)
-                throw new NotFoundException<Comment>();
+            if (!dto.ParentId.HasValue)
+                throw new UnAuthorizedAccessException("Owners can only reply to comments, not create new ones.");
+
+            var parentComment = await _repo.GetByIdAsync(dto.ParentId.Value, x => x, false, false);
+            if (parentComment == null)
+                throw new NotFoundException<Comment>("Parent comment not found.");
+
+            var restaurant = await _restRepo.GetByIdAsync(parentComment.RestaurantId, x => x, false, false);
+            if (restaurant == null || restaurant.OwnerId != _userId)
+                throw new UnAuthorizedAccessException("You can only reply to comments on your own restaurant.");
         }
-        comment.RestaurantId = parent?.RestaurantId ?? dto.RestaurantId;
+        else
+        {
+
+            if (dto.ParentId.HasValue)
+                throw new UnAuthorizedAccessException("Users cannot reply to comments.");
+        }
+
+        comment.RestaurantId = dto.ParentId.HasValue ? (await _repo.GetByIdAsync(dto.ParentId.Value, x => x, false, false))!.RestaurantId : dto.RestaurantId;
         await _repo.AddAsync(comment);
         await _repo.SaveAsync();
         return comment.Id;
@@ -73,6 +87,7 @@ public class CommentService(ICommentRepository _repo, ICurrentUser _user, IResta
                 ParentId = r.ParentId
             }).ToList()
         }, true, false);
+        if (comment is null) throw new NotFoundException<Comment>();
         return comment;
     }
 
@@ -85,7 +100,18 @@ public class CommentService(ICommentRepository _repo, ICurrentUser _user, IResta
             Children = x.Children
         }, false, false);
         if (comment == null) throw new NotFoundException<Comment>();
-        if (comment.UserId != _user.GetId()) throw new UnAuthorizedAccessException("You can only edit your own comments.");
+        comment.UserId = _userId;
+        if (_userRole == nameof(Role.Owner))
+        {
+            var restaurant = await _restRepo.GetByIdAsync(comment.RestaurantId, x => x, false, false);
+            if (restaurant == null || restaurant.OwnerId != _userId)
+                throw new UnAuthorizedAccessException("You can only edit replies on your own restaurant.");
+        }
+        else
+        {
+            if (comment.UserId != _userId)
+                throw new UnAuthorizedAccessException("You can only edit your own comments.");
+        }
         _mapper.Map(dto, comment);
         comment.UpdatedTime = DateTime.UtcNow;
         await _repo.AddAsync(comment);

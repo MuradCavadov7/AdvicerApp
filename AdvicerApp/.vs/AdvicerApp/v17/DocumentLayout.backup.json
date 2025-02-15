@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{498F8223-DEF7-4FD3-82F5-F1161C5D653B}|AdvicerApp\\AdvicerApp.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp\\controllers\\ownerrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498F8223-DEF7-4FD3-82F5-F1161C5D653B}|AdvicerApp\\AdvicerApp.csproj|solutionrelative:advicerapp\\controllers\\ownerrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\externalservices\\implements\\currentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\externalservices\\implements\\currentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\implements\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\implements\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\implements\\ownerapproveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\implements\\ownerapproveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\services\\interface\\iownerapproveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\services\\interface\\iownerapproveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\dtos\\userdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\dtos\\userdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp.bl\\exceptions\\common\\failedrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE31C464-FD59-4CBE-BA04-518B09D45BB6}|AdvicerApp.BL\\AdvicerApp.BL.csproj|solutionrelative:advicerapp.bl\\exceptions\\common\\failedrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{498F8223-DEF7-4FD3-82F5-F1161C5D653B}|AdvicerApp\\AdvicerApp.csproj|c:\\users\\99477\\desktop\\advicerapp\\advicerapp\\advicerapp\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498F8223-DEF7-4FD3-82F5-F1161C5D653B}|AdvicerApp\\AdvicerApp.csproj|solutionrelative:advicerapp\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,72 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\ServiceRegistration.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA4AAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "AdvicerApp\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\ServiceRegistration.cs",
+              "RelativeToolTip": "AdvicerApp\\ServiceRegistration.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwFUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:18:40.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OwnerRequestsController.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\Controllers\\OwnerRequestsController.cs",
-              "RelativeDocumentMoniker": "AdvicerApp\\Controllers\\OwnerRequestsController.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\Controllers\\OwnerRequestsController.cs",
-              "RelativeToolTip": "AdvicerApp\\Controllers\\OwnerRequestsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:12:58.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\UserDtos\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\DTOs\\UserDtos\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\DTOs\\UserDtos\\RegisterDto.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\DTOs\\UserDtos\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:10:55.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\AuthService.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\AuthService.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\AuthService.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\AuthService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAnwDAAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T12:58:54.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FailedRequestException.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Exceptions\\Common\\FailedRequestException.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\Exceptions\\Common\\FailedRequestException.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Exceptions\\Common\\FailedRequestException.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\Exceptions\\Common\\FailedRequestException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T10:53:16.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T12:47:53.076Z"
             },
             {
               "$type": "Document",
@@ -113,22 +52,47 @@
               "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\OwnerApproveService.cs",
               "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\OwnerApproveService.cs",
               "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\OwnerApproveService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T10:38:17.763Z",
+              "WhenOpened": "2025-02-15T12:25:14.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CurrentUser.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\ExternalServices\\Implements\\CurrentUser.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\ExternalServices\\Implements\\CurrentUser.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\ExternalServices\\Implements\\CurrentUser.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\ExternalServices\\Implements\\CurrentUser.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwDAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T12:21:09.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IOwnerApproveService.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Interface\\IOwnerApproveService.cs",
-              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Interface\\IOwnerApproveService.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Interface\\IOwnerApproveService.cs",
-              "RelativeToolTip": "AdvicerApp.BL\\Services\\Interface\\IOwnerApproveService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\AuthService.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\AuthService.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\AuthService.cs*",
+              "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\AuthService.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwC0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T10:37:26.527Z",
+              "WhenOpened": "2025-02-15T12:16:46.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
+              "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
+              "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T12:01:37.43Z",
               "EditorCaption": ""
             }
           ]
