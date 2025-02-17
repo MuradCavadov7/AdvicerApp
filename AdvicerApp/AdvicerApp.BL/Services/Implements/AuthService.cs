@@ -7,6 +7,7 @@ using AdvicerApp.Core.Entities;
 using AdvicerApp.Core.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Caching.Memory;
+using System.Security.Claims;
 using System.Text;
 
 namespace AdvicerApp.BL.Services.Implements;
@@ -62,7 +63,7 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             await _roleManager.CreateAsync(new IdentityRole(item.GetRole()));
         }
     }
-    public async Task<string> LoginAsync(LoginDto dto)
+    public async Task<string> LoginAsync(LoginDto dto,string deviceId)
     {
         User? user = null;
         if (dto.UsernameOrEmail.Contains('@'))
@@ -74,6 +75,15 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             user = await _userManager.FindByNameAsync(dto.UsernameOrEmail);
         }
         if (user == null) throw new BadRequestException("Username or password is(are) wrong");
+        var userDevices = await _userManager.GetClaimsAsync(user);
+        var existingDeviceClaim = userDevices.FirstOrDefault(c => c.Type == "DeviceId");
+
+        if (existingDeviceClaim == null || existingDeviceClaim.Value != deviceId)
+        {
+            await _userManager.AddClaimAsync(user, new Claim("DeviceId", deviceId));
+            await SendTwoFactorCodeAsync(user);
+            throw new TwoFactorRequiredException();
+        }
 
         var result = await _signInManager.CheckPasswordSignInAsync(user, dto.Password, false);
         if (!result.Succeeded)
@@ -125,5 +135,36 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
         _cache.Set(email, code, TimeSpan.FromMinutes(5));
         return code;
 
+    }
+
+    public async Task VerifyTwoFactorCodeAsync(string email, int code, string deviceId)
+    {
+        if (!_cache.TryGetValue($"2FA_{email}", out int cachedCode))
+            throw new BadRequestException("Verification code expired or not found");
+
+        if (cachedCode != code)
+            throw new BadRequestException("Verification code is incorrect.");
+
+        var user = await _userManager.FindByEmailAsync(email);
+        if (user == null)
+            throw new NotFoundException<User>("User not found");
+            
+        var userDevices = await _userManager.GetClaimsAsync(user);
+        var existingDeviceClaim = userDevices.FirstOrDefault(c => c.Type == "DeviceId");
+        if (existingDeviceClaim == null)
+        {
+            await _userManager.AddClaimAsync(user, new Claim("DeviceId", deviceId));
+        }
+
+        _cache.Remove($"2FA_{email}");
+    }
+
+
+    private async Task SendTwoFactorCodeAsync(User user)
+    {
+        Random random = new Random();
+        int code = random.Next(100000, 999999);
+        await _sendEmail.SendEmailAsync(user.Email, user.UserName, code.ToString()); 
+        _cache.Set($"2FA_{user.Email}", code, TimeSpan.FromMinutes(5));
     }
 }
