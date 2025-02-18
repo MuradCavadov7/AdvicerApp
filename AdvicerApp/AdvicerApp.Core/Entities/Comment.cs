@@ -12,4 +12,5 @@ public class Comment : BaseEntity
     public int ParentId {  get; set; }
     public Comment Parent { get; set; }
     public ICollection<Comment> Children { get; set; }
+    public ICollection<Report> Reports { get; set; }
 }

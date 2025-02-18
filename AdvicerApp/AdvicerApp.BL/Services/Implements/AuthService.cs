@@ -12,7 +12,7 @@ using System.Text;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler, RoleManager<IdentityRole> _roleManager, SignInManager<User> _signInManager, IMemoryCache _cache, IEmailSend _sendEmail,IOwnerApproveService _ownerApproveService) : IAuthService
+public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler, RoleManager<IdentityRole> _roleManager, SignInManager<User> _signInManager, IMemoryCache _cache, IEmailSend _sendEmail, IOwnerApproveService _ownerApproveService) : IAuthService
 {
     public async Task<string> RegisterAsync(RegisterDto dto)
     {
@@ -63,7 +63,7 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             await _roleManager.CreateAsync(new IdentityRole(item.GetRole()));
         }
     }
-    public async Task<string> LoginAsync(LoginDto dto,string deviceId)
+    public async Task<string> LoginAsync(LoginDto dto)
     {
         User? user = null;
         if (dto.UsernameOrEmail.Contains('@'))
@@ -75,15 +75,6 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             user = await _userManager.FindByNameAsync(dto.UsernameOrEmail);
         }
         if (user == null) throw new BadRequestException("Username or password is(are) wrong");
-        var userDevices = await _userManager.GetClaimsAsync(user);
-        var existingDeviceClaim = userDevices.FirstOrDefault(c => c.Type == "DeviceId");
-
-        if (existingDeviceClaim == null || existingDeviceClaim.Value != deviceId)
-        {
-            await _userManager.AddClaimAsync(user, new Claim("DeviceId", deviceId));
-            await SendTwoFactorCodeAsync(user);
-            throw new TwoFactorRequiredException();
-        }
 
         var result = await _signInManager.CheckPasswordSignInAsync(user, dto.Password, false);
         if (!result.Succeeded)
@@ -139,7 +130,7 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
 
     public async Task VerifyTwoFactorCodeAsync(string email, int code, string deviceId)
     {
-        if (!_cache.TryGetValue($"2FA_{email}", out int cachedCode))
+        if (!_cache.TryGetValue(email, out int cachedCode))
             throw new BadRequestException("Verification code expired or not found");
 
         if (cachedCode != code)
@@ -156,15 +147,15 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             await _userManager.AddClaimAsync(user, new Claim("DeviceId", deviceId));
         }
 
-        _cache.Remove($"2FA_{email}");
+        _cache.Remove(email);
     }
 
 
-    private async Task SendTwoFactorCodeAsync(User user)
+    public async Task SendTwoFactorCodeAsync(User user)
     {
         Random random = new Random();
         int code = random.Next(100000, 999999);
         await _sendEmail.SendEmailAsync(user.Email, user.UserName, code.ToString()); 
-        _cache.Set($"2FA_{user.Email}", code, TimeSpan.FromMinutes(5));
+        _cache.Set(user.Email, code, TimeSpan.FromMinutes(5));
     }
 }
