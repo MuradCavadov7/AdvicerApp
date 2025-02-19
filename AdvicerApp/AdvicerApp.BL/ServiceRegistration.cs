@@ -20,7 +20,8 @@ public static class ServiceRegistration
         services.AddScoped<ICommentService, CommentService>();
         services.AddScoped<IMenuService, MenuService>();
         services.AddScoped<IOwnerApproveService, OwnerApproveService>();
-
+        services.AddScoped<IReportService, ReportService>();
+        services.AddScoped<IUserService, UserService>();
         services.AddScoped<IJwtHandler, JwtHandler>();
         services.AddScoped<ICurrentUser, CurrentUser>();
         services.AddScoped<IEmailSend, EmailSend>();

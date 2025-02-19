@@ -11,6 +11,7 @@ public class Comment : BaseEntity
     public Restaurant Restaurant { get; set; }
     public int ParentId {  get; set; }
     public Comment Parent { get; set; }
+    public string? CommentImage { get; set; }
     public ICollection<Comment> Children { get; set; }
     public ICollection<Report> Reports { get; set; }
 }

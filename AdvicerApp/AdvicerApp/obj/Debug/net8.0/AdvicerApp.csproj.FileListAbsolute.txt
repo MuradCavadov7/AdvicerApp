@@ -159,3 +159,7 @@ C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\FluentV
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\AdvicerApp.staticwebassets.runtime.json
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\bin\Debug\net8.0\AdvicerApp.staticwebassets.endpoints.json
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\obj\Debug\net8.0\staticwebassets\msbuild.AdvicerApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\99477\Desktop\AdvicerApp\AdvicerApp\AdvicerApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

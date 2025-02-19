@@ -9,7 +9,7 @@ using AutoMapper;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class CommentService(ICommentRepository _repo, ICurrentUser _user, IRestaurantRepository _restRepo, IMapper _mapper) : ICommentService
+public class CommentService(ICommentRepository _repo, ICurrentUser _user, IRestaurantRepository _restRepo, IMapper _mapper,IUserService _userService) : ICommentService
 {
     private string _userId = _user.GetId();
     private string _userRole = _user.GetRole();
@@ -36,6 +36,10 @@ public class CommentService(ICommentRepository _repo, ICurrentUser _user, IResta
 
             if (dto.ParentId.HasValue)
                 throw new UnAuthorizedAccessException("Users cannot reply to comments.");
+        }
+        if (await _userService.IsUserBanned(_user.GetId()))
+        {
+            throw new UnauthorizedAccessException("You are banned from commenting.");
         }
 
         comment.RestaurantId = dto.ParentId.HasValue ? (await _repo.GetByIdAsync(dto.ParentId.Value, x => x, false, false))!.RestaurantId : dto.RestaurantId;
@@ -111,6 +115,10 @@ public class CommentService(ICommentRepository _repo, ICurrentUser _user, IResta
         {
             if (comment.UserId != _userId)
                 throw new UnAuthorizedAccessException("You can only edit your own comments.");
+        }
+        if (await _userService.IsUserBanned(_user.GetId()))
+        {
+            throw new UnauthorizedAccessException("You are banned from commenting.");
         }
         _mapper.Map(dto, comment);
         comment.UpdatedTime = DateTime.UtcNow;

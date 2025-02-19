@@ -10,7 +10,7 @@ using AdvicerApp.Core.Repositories;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class RatingService(IRatingRepository _repo, IRestaurantRepository _restRepo, ICurrentUser _user) : IRatingService
+public class RatingService(IRatingRepository _repo, IRestaurantRepository _restRepo, ICurrentUser _user, IUserService _userService) : IRatingService
 {
     private string _userId = _user.GetId();
     private string _userRole = _user.GetRole();
@@ -23,7 +23,10 @@ public class RatingService(IRatingRepository _repo, IRestaurantRepository _restR
         if(_userRole != nameof(Role.User)) throw new UnauthorizedAccessException("Only User can rate");
 
         if (dto.Score < 1 && dto.Score > 5) throw new InvalidScoreException("Rating score must be between 1-5");
-
+        if (await _userService.IsUserBanned(_user.GetId()))
+        {
+            throw new UnauthorizedAccessException("You are banned from commenting.");
+        }
         var rating = new Rating();
         rating.Score = dto.Score;
         rating.UserId = _userId;
@@ -46,6 +49,10 @@ public class RatingService(IRatingRepository _repo, IRestaurantRepository _restR
         var rating = await _repo.GetByIdAsync(ratingId, x => new Rating { Id = x.Id,Score = x.Score }, false, false);
         if (rating == null) throw new NotFoundException<Rating>();
         if (_userRole != nameof(Role.User)) throw new UnauthorizedAccessException("Only User can change rating");
+        if (await _userService.IsUserBanned(_user.GetId()))
+        {
+            throw new UnauthorizedAccessException("You are banned from commenting.");
+        }
         rating.Score = dto.Score;
         await _repo.SaveAsync();
     }

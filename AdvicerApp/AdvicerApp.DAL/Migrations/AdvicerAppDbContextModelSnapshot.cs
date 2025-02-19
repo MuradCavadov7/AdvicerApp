@@ -57,6 +57,10 @@ namespace AdvicerApp.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("CommentImage")
+                        .HasMaxLength(512)
+                        .HasColumnType("nvarchar(512)");
+
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("datetime2");
 
@@ -246,6 +250,47 @@ namespace AdvicerApp.DAL.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Ratings");
+                });
+
+            modelBuilder.Entity("AdvicerApp.Core.Entities.Report", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CommentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsResolved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("OwnerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommentId");
+
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("Reports");
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Restaurant", b =>
@@ -627,6 +672,23 @@ namespace AdvicerApp.DAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AdvicerApp.Core.Entities.Report", b =>
+                {
+                    b.HasOne("AdvicerApp.Core.Entities.Comment", "Comment")
+                        .WithMany("Reports")
+                        .HasForeignKey("CommentId");
+
+                    b.HasOne("AdvicerApp.Core.Entities.User", "Owner")
+                        .WithMany("Reports")
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Comment");
+
+                    b.Navigation("Owner");
+                });
+
             modelBuilder.Entity("AdvicerApp.Core.Entities.Restaurant", b =>
                 {
                     b.HasOne("AdvicerApp.Core.Entities.Category", "Category")
@@ -716,6 +778,8 @@ namespace AdvicerApp.DAL.Migrations
             modelBuilder.Entity("AdvicerApp.Core.Entities.Comment", b =>
                 {
                     b.Navigation("Children");
+
+                    b.Navigation("Reports");
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Menu", b =>
@@ -741,6 +805,8 @@ namespace AdvicerApp.DAL.Migrations
                     b.Navigation("OwnerRequests");
 
                     b.Navigation("Ratings");
+
+                    b.Navigation("Reports");
 
                     b.Navigation("Restaurants");
                 });

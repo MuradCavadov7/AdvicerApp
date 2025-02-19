@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KZ0e/ownfg5kkBPL0ceoqHYdjTSZDAOplpJYWBFfPSU=",
+  "Hash": "ixzs+F1KxRRY8PUVbWtt9YRcsw27Yz4+GNZWeLVcttA=",
   "Source": "AdvicerApp",
   "BasePath": "_content/AdvicerApp",
   "Mode": "Default",
@@ -22,113 +22,413 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
       "BasePath": "_content/AdvicerApp",
-      "RelativePath": "imgs/menuItem/l221uxka.iin.png",
+      "RelativePath": "imgs/menuItem/l221uxka.iin#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "k5ycchi47v",
+      "Integrity": "6MesGDn6lvlzTbDRDlvmfMvh2HOId2P/EankGzPUxcs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\menuItem\\l221uxka.iin.png"
     },
     {
-      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\5jjag4jr.1u3.jpg",
+      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\fo4c3rt1.ecy.jpg",
       "SourceId": "AdvicerApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
       "BasePath": "_content/AdvicerApp",
-      "RelativePath": "imgs/restaurant/5jjag4jr.1u3.jpg",
+      "RelativePath": "imgs/restaurant/fo4c3rt1.ecy#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "gedw7dogxs",
+      "Integrity": "2EbD4XevyU8dGwhpttXh3XwF+q1yxLFfLKxOEXTqTqE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\restaurant\\5jjag4jr.1u3.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\restaurant\\fo4c3rt1.ecy.jpg"
     },
     {
-      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\d4iupxsq.eb1.jpg",
+      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\gkkibvnf.oiq.jpg",
       "SourceId": "AdvicerApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
       "BasePath": "_content/AdvicerApp",
-      "RelativePath": "imgs/restaurant/d4iupxsq.eb1.jpg",
+      "RelativePath": "imgs/restaurant/gkkibvnf.oiq#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "wgh7tiugf4",
+      "Integrity": "MPmi/CV2Jvsvg6tTmpDMQ0LwXIRis6wnzI8dTv+VZ20=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\restaurant\\d4iupxsq.eb1.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\restaurant\\gkkibvnf.oiq.jpg"
     },
     {
-      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\eerw13pr.ydy.jpg",
+      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\w1vunoeu.fks.jpg",
       "SourceId": "AdvicerApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
       "BasePath": "_content/AdvicerApp",
-      "RelativePath": "imgs/restaurant/eerw13pr.ydy.jpg",
+      "RelativePath": "imgs/restaurant/w1vunoeu.fks#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "l9gwpy7zg7",
+      "Integrity": "pzTWWUf6brLNEbugBpjfMjFPzG6W89uDeXFkUfccOO0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\restaurant\\eerw13pr.ydy.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\restaurant\\w1vunoeu.fks.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "imgs/menuItem/l221uxka.iin.k5ycchi47v.png",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\menuItem\\l221uxka.iin.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6MesGDn6lvlzTbDRDlvmfMvh2HOId2P/EankGzPUxcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 11:49:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k5ycchi47v"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/menuItem/l221uxka.iin.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6MesGDn6lvlzTbDRDlvmfMvh2HOId2P/EankGzPUxcs="
+        }
+      ]
     },
     {
-      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\up3ddhgv.vq3.jpg",
-      "SourceId": "AdvicerApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
-      "BasePath": "_content/AdvicerApp",
-      "RelativePath": "imgs/restaurant/up3ddhgv.vq3.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\restaurant\\up3ddhgv.vq3.jpg"
+      "Route": "imgs/menuItem/l221uxka.iin.png",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\menuItem\\l221uxka.iin.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6MesGDn6lvlzTbDRDlvmfMvh2HOId2P/EankGzPUxcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 11:49:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6MesGDn6lvlzTbDRDlvmfMvh2HOId2P/EankGzPUxcs="
+        }
+      ]
     },
     {
-      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\yjvbfsaz.t51.jpg",
-      "SourceId": "AdvicerApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
-      "BasePath": "_content/AdvicerApp",
-      "RelativePath": "imgs/restaurant/yjvbfsaz.t51.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgs\\restaurant\\yjvbfsaz.t51.jpg"
+      "Route": "imgs/restaurant/fo4c3rt1.ecy.gedw7dogxs.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\fo4c3rt1.ecy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EbD4XevyU8dGwhpttXh3XwF+q1yxLFfLKxOEXTqTqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gedw7dogxs"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/restaurant/fo4c3rt1.ecy.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EbD4XevyU8dGwhpttXh3XwF+q1yxLFfLKxOEXTqTqE="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/restaurant/fo4c3rt1.ecy.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\fo4c3rt1.ecy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EbD4XevyU8dGwhpttXh3XwF+q1yxLFfLKxOEXTqTqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EbD4XevyU8dGwhpttXh3XwF+q1yxLFfLKxOEXTqTqE="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/restaurant/gkkibvnf.oiq.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\gkkibvnf.oiq.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "287958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MPmi/CV2Jvsvg6tTmpDMQ0LwXIRis6wnzI8dTv+VZ20=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MPmi/CV2Jvsvg6tTmpDMQ0LwXIRis6wnzI8dTv+VZ20="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/restaurant/gkkibvnf.oiq.wgh7tiugf4.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\gkkibvnf.oiq.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "287958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MPmi/CV2Jvsvg6tTmpDMQ0LwXIRis6wnzI8dTv+VZ20=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wgh7tiugf4"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/restaurant/gkkibvnf.oiq.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MPmi/CV2Jvsvg6tTmpDMQ0LwXIRis6wnzI8dTv+VZ20="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/restaurant/w1vunoeu.fks.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\w1vunoeu.fks.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pzTWWUf6brLNEbugBpjfMjFPzG6W89uDeXFkUfccOO0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pzTWWUf6brLNEbugBpjfMjFPzG6W89uDeXFkUfccOO0="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/restaurant/w1vunoeu.fks.l9gwpy7zg7.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\w1vunoeu.fks.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pzTWWUf6brLNEbugBpjfMjFPzG6W89uDeXFkUfccOO0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l9gwpy7zg7"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/restaurant/w1vunoeu.fks.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pzTWWUf6brLNEbugBpjfMjFPzG6W89uDeXFkUfccOO0="
+        }
+      ]
     }
   ]
 }

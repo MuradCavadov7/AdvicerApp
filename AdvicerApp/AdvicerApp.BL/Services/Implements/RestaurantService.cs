@@ -82,7 +82,7 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
             Description = x.Description,
             AverageRating = Convert.ToDecimal(x.Ratings.Any() ? x.Ratings.Average(r => r.Score) : 0),
             OwnerId = x.OwnerId,
-            Comments = x.Comments.Where(c => c.ParentId == 0)
+            Comments = x.Comments.Where(c => c.ParentId == 0).Take(5)
             .Select(c => new CommentGetDto
             {
                 Id = c.Id,

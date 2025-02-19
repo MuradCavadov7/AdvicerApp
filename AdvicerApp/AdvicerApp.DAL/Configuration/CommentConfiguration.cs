@@ -14,6 +14,10 @@ public class CommentConfiguration : IEntityTypeConfiguration<Comment>
             .IsRequired()
             .HasMaxLength(1000);
 
+        builder.Property(x => x.CommentImage)
+            .IsRequired(false)
+            .HasMaxLength(512);
+
         builder.HasOne(x => x.User)
             .WithMany(x => x.Comments)
             .HasForeignKey(x => x.UserId)
