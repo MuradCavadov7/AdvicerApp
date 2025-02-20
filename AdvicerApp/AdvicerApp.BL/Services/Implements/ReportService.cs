@@ -9,7 +9,7 @@ using AdvicerApp.Core.Repositories;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentRepository _comRepo) : IReportService
+public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentRepository _comRepo,IRestaurantRepository _restRepo) : IReportService
 {
     private string _userId = _user.GetId();
     private string _userRole = _user.GetRole();
@@ -18,11 +18,15 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
         if (_userRole != nameof(Role.Owner)) 
             throw new UnauthorizedAccessException("Only Owner report comment");
 
-        var comment = await _comRepo.GetByIdAsync(dto.CommentId,x=>x,false,false);
+        var comment = await _comRepo.GetByIdAsync(dto.CommentId,x =>new { x.RestaurantId,x.Text }, false,false);
         if (comment == null)
             throw new NotFoundException<Comment>("Comment not found.");
 
-        if (comment.Restaurant.OwnerId != _userId)
+        var restaurant = await _restRepo.GetByIdAsync(comment.RestaurantId,x=>x,false,false);
+        if (restaurant == null)
+            throw new NotFoundException<Restaurant>("Restaurant not found.");
+
+        if (restaurant.OwnerId != _userId)
             throw new UnauthorizedAccessException("You can only report comments from your own restaurant.");
 
         if (!BadWordsFilter.ContainsBadWords(comment.Text))

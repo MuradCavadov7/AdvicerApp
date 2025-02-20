@@ -9,7 +9,7 @@ public class Comment : BaseEntity
     public User User { get; set; }
     public int RestaurantId {  get; set; }
     public Restaurant Restaurant { get; set; }
-    public int ParentId {  get; set; }
+    public int? ParentId {  get; set; }
     public Comment Parent { get; set; }
     public string? CommentImage { get; set; }
     public ICollection<Comment> Children { get; set; }

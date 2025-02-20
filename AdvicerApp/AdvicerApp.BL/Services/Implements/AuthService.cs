@@ -18,6 +18,9 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
     {
         if (await _userManager.FindByEmailAsync(dto.Email) != null) throw new ExistsException<User>("This email already exists.");
         if (await _userManager.FindByNameAsync(dto.Username) != null) throw new ExistsException<User>("This username already exists.");
+        if (dto.IsRestaurantOwner && dto.OwnerDocument == null)
+            throw new BadRequestException("Owner document is required.");
+
         User user = new User()
         {
             Email = dto.Email,

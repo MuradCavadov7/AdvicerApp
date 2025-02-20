@@ -12,19 +12,62 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
+                "type": "object",
+                "properties": {
+                  "Fullname": {
+                    "type": "string"
+                  },
+                  "Username": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "RePassword": {
+                    "type": "string"
+                  },
+                  "Gender": {
+                    "$ref": "#/components/schemas/Gender"
+                  },
+                  "IsRestaurantOwner": {
+                    "type": "boolean"
+                  },
+                  "OwnerDocument": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Fullname": {
+                  "style": "form"
+                },
+                "Username": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "RePassword": {
+                  "style": "form"
+                },
+                "Gender": {
+                  "style": "form"
+                },
+                "IsRestaurantOwner": {
+                  "style": "form"
+                },
+                "OwnerDocument": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -289,6 +332,10 @@
                     "type": "integer",
                     "format": "int32"
                   },
+                  "EvidentialImage": {
+                    "type": "string",
+                    "format": "binary"
+                  },
                   "ParentId": {
                     "type": "integer",
                     "format": "int32"
@@ -300,6 +347,9 @@
                   "style": "form"
                 },
                 "RestaurantId": {
+                  "style": "form"
+                },
+                "EvidentialImage": {
                   "style": "form"
                 },
                 "ParentId": {
@@ -361,11 +411,18 @@
                 "properties": {
                   "Text": {
                     "type": "string"
+                  },
+                  "EvidentialImage": {
+                    "type": "string",
+                    "format": "binary"
                   }
                 }
               },
               "encoding": {
                 "Text": {
+                  "style": "form"
+                },
+                "EvidentialImage": {
                   "style": "form"
                 }
               }
@@ -1434,43 +1491,6 @@
           "score": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "RegisterDto": {
-        "type": "object",
-        "properties": {
-          "fullname": {
-            "type": "string",
-            "nullable": true
-          },
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          },
-          "rePassword": {
-            "type": "string",
-            "nullable": true
-          },
-          "gender": {
-            "$ref": "#/components/schemas/Gender"
-          },
-          "isRestaurantOwner": {
-            "type": "boolean"
-          },
-          "ownerDocument": {
-            "type": "string",
-            "format": "binary",
-            "nullable": true
           }
         },
         "additionalProperties": false

@@ -34,9 +34,44 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "AdvicerApp.BL.DTOs.UserDtos.RegisterDto",
-        "IsRequired": true
+        "Name": "Fullname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RePassword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Gender",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsRestaurantOwner",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "OwnerDocument",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -190,6 +225,11 @@
         "Name": "Text",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "EvidentialImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -210,6 +250,11 @@
       {
         "Name": "RestaurantId",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "EvidentialImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },
       {

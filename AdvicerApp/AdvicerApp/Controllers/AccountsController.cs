@@ -9,7 +9,7 @@ namespace AdvicerApp.Controllers;
 public class AccountsController(IAuthService _service) : ControllerBase
 {
     [HttpPost]
-    public async Task<IActionResult> Register([FromBody]RegisterDto dto)
+    public async Task<IActionResult> Register([FromForm]RegisterDto dto)
     {
         await _service.RegisterAsync(dto);
         return Created();

@@ -13,5 +13,5 @@ public class RegisterDto
     public Gender Gender { get; set; }
     
     public bool IsRestaurantOwner {  get; set; }
-    public IFormFile OwnerDocument { get; set; }
+    public IFormFile? OwnerDocument { get; set; }
 }

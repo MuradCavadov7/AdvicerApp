@@ -13,5 +13,6 @@ public class CommentCreateDtoValidator : AbstractValidator<CommentCreateDto>
             .WithMessage("Content cannot be emtpy")
             .MaximumLength(1000)
             .WithMessage("Content must be 1000 characters");
+
     }
 }
