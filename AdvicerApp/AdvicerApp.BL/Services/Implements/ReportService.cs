@@ -18,7 +18,7 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
         if (_userRole != nameof(Role.Owner)) 
             throw new UnauthorizedAccessException("Only Owner report comment");
 
-        var comment = await _comRepo.GetByIdAsync(dto.CommentId,x =>new { x.RestaurantId,x.Text }, false,false);
+        var comment = await _comRepo.GetByIdAsync(dto.CommentId,x =>x, false,false);
         if (comment == null)
             throw new NotFoundException<Comment>("Comment not found.");
 
@@ -39,6 +39,7 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
             Reason = dto.Reason,
             IsResolved = false,
         };
+
         await _repo.AddAsync(report);
         await _repo.SaveAsync();
 
@@ -80,7 +81,11 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
         var report = await _repo.GetByIdAsync(id,x=>x,false,false);
         if (report == null)
             throw new NotFoundException<Report>();
-
+        if (report.Comment != null)
+        {
+             _comRepo.Delete(report.Comment);
+            await _comRepo.SaveAsync();
+        }
         report.IsResolved = true;
         await _repo.SaveAsync();
     }

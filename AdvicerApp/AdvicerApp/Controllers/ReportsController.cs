@@ -13,8 +13,8 @@ public class ReportsController(IReportService _service) : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateReport([FromForm] ReportCreateDto dto)
     {
-        var reportId = await _service.CreateAsync(dto);
-        return Ok();
+        var report = await _service.CreateAsync(dto);
+        return Ok(report);
     }
 
     [Authorize(Roles = "Admin")]
