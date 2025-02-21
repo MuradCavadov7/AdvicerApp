@@ -83,8 +83,15 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
             throw new NotFoundException<Report>();
         if (report.Comment != null)
         {
-             _comRepo.Delete(report.Comment);
-            await _comRepo.SaveAsync();
+            var comment = await _comRepo.GetByIdAsync(report.CommentId.Value, x => x, false, false);
+            if (comment == null) 
+                throw new NotFoundException<Comment>();
+
+            else
+            {
+                _comRepo.Delete(comment);
+                await _comRepo.SaveAsync();
+            }
         }
         report.IsResolved = true;
         await _repo.SaveAsync();

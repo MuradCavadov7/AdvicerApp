@@ -38,8 +38,7 @@
               "RelativeToolTip": "AdvicerApp\\Controllers\\ReportsController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:53:02.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T16:53:02.222Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\ReportService.cs",
               "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\ReportService.cs",
               "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\ReportService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwFgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T15:53:06.989Z",
               "EditorCaption": ""
@@ -64,8 +63,7 @@
               "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\RestaurantService.cs",
               "ViewState": "AgIAAKwAAAAAAAAAAAAswDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T15:33:52.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T15:33:52.3Z"
             },
             {
               "$type": "Document",
@@ -75,7 +73,7 @@
               "RelativeDocumentMoniker": "AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
               "ToolTip": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
               "RelativeToolTip": "AdvicerApp.BL\\Services\\Implements\\CommentService.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAowBQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T15:33:47.9Z",
               "EditorCaption": ""

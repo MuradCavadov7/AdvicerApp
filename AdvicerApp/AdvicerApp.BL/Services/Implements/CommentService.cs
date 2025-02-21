@@ -50,12 +50,6 @@ public class CommentService(ICommentRepository _repo, ICurrentUser _user, IResta
             if (restaurant == null || restaurant.OwnerId != _userId)
                 throw new UnAuthorizedAccessException("You can only reply to comments on your own restaurant.");
         }
-        else
-        {
-
-            if (dto.ParentId.HasValue)
-                throw new UnAuthorizedAccessException("Users cannot reply to comments.");
-        }
 
 
         if (await _userService.IsUserBanned(_user.GetId()))
