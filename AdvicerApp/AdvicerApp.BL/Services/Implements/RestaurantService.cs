@@ -163,17 +163,7 @@ public class RestaurantService(IRestaurantRepository _repo, IMapper _mapper, ICa
             if (!dto.Files.All(x => x.IsValidSize(10))) throw new InvalidFileException("The files can be max 10 MB.");
         }
         var restaurant = await _repo.GetByIdAsync
-            (id, x => new Restaurant
-            {
-                Id = id,
-                Name = x.Name,
-                Description = x.Description,
-                CategoryId = x.CategoryId,
-                Location = x.Location,
-                Address = x.Address,
-                Image = x.Image,
-                RestaurantImages = x.RestaurantImages
-            }, false, false);
+            (id, x =>x, false, false);
 
         if (!await _catRepo.IsExistAsync(dto.CategoryId)) throw new NotFoundException<Category>("Category is not found");
 

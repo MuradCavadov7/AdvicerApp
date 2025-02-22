@@ -65,14 +65,25 @@ public class CommentService(ICommentRepository _repo, ICurrentUser _user, IResta
 
     public async Task DeleteAsync(int id)
     {
-        var comment = await _repo.GetByIdAsync(id, x => new Comment { Id = x.Id }, false, false);
+        var comment = await _repo.GetByIdAsync(id, q => q, true, false);
         if (comment == null) throw new NotFoundException<Comment>();
 
-        string imagePath = Path.Combine(_env.WebRootPath, "imgs", "comment", comment.CommentImage);
-        if (File.Exists(imagePath))
+        if (!string.IsNullOrEmpty(comment.CommentImage))
         {
-            File.Delete(imagePath);
+            string imagePath = Path.Combine(_env.WebRootPath, "imgs", "comment", comment.CommentImage);
+            if (File.Exists(imagePath))
+            {
+                File.Delete(imagePath);
+            }
         }
+        if (comment.Children != null)
+        {
+            foreach (var reply in comment.Children)
+            {
+                _repo.Delete(reply);
+            }
+        }
+
 
         _repo.Delete(comment);
         await _repo.SaveAsync();
@@ -177,8 +188,6 @@ public class CommentService(ICommentRepository _repo, ICurrentUser _user, IResta
         _mapper.Map(dto, comment);
 
         comment.UpdatedTime = DateTime.UtcNow;
-
-        await _repo.AddAsync(comment);
 
         await _repo.SaveAsync();
     }

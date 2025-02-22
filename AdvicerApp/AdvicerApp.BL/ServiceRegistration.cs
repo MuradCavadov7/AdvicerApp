@@ -22,6 +22,8 @@ public static class ServiceRegistration
         services.AddScoped<IOwnerApproveService, OwnerApproveService>();
         services.AddScoped<IReportService, ReportService>();
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IStatusService, StatusService>();
+        services.AddScoped<IStatusCommentService, StatusCommentService>();
         services.AddScoped<IJwtHandler, JwtHandler>();
         services.AddScoped<ICurrentUser, CurrentUser>();
         services.AddScoped<IEmailSend, EmailSend>();

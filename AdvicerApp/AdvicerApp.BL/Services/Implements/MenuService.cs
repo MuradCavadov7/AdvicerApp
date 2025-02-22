@@ -68,7 +68,7 @@ public class MenuService(IMenuRepository _repo, IRestaurantRepository _restRepo,
 
     public async Task UpdateAsync(int id, MenuUpdateDto dto)
     {
-        var menu = await _repo.GetByIdAsync(id, x => new Menu { Id = x.Id,Name = x.Name,Description = x.Description }, false, false);
+        var menu = await _repo.GetByIdAsync(id, x => x, false, false);
         if (menu is null) throw new NotFoundException<Menu>();
         _mapper.Map(dto, menu);
         await _repo.SaveAsync();

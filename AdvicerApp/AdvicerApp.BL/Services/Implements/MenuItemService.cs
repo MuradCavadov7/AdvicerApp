@@ -75,14 +75,7 @@ public class MenuItemService(IMenuItemRepository _repo, IMapper _mapper, IMenuRe
             if (!dto.File.IsValidType("image")) throw new InvalidFileException("The file must be image");
             if (!dto.File.IsValidSize(3)) throw new InvalidFileException("The file can be max 5 MB.");
         }
-        var menuItem = await _repo.GetByIdAsync(id, x => new MenuItem
-        {
-            Id = x.Id,
-            Name = x.Name,
-            Description = x.Description,
-            Price = x.Price,
-            Image = x.Image
-        }, false, false);
+        var menuItem = await _repo.GetByIdAsync(id, x => x, false, false);
         if (menuItem == null) throw new NotFoundException<MenuItem>();
         _mapper.Map(dto, menuItem);
         string imagePath = Path.Combine(_env.WebRootPath, "imgs", "menuItem", menuItem.Image);

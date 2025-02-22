@@ -46,7 +46,7 @@ public class RatingService(IRatingRepository _repo, IRestaurantRepository _restR
 
     public async Task UpdateAsync(int ratingId, RatingUpdateDto dto)
     {
-        var rating = await _repo.GetByIdAsync(ratingId, x => new Rating { Id = x.Id,Score = x.Score }, false, false);
+        var rating = await _repo.GetByIdAsync(ratingId, x => x, false, false);
         if (rating == null) throw new NotFoundException<Rating>();
         if (_userRole != nameof(Role.User)) throw new UnauthorizedAccessException("Only User can change rating");
         if (await _userService.IsUserBanned(_user.GetId()))

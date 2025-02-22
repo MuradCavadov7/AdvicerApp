@@ -46,7 +46,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Comment", b =>
@@ -93,7 +93,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Comments");
+                    b.ToTable("Comments", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Common.OwnerRequest", b =>
@@ -129,7 +129,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasIndex("OwnerId");
 
-                    b.ToTable("OwnerRequests");
+                    b.ToTable("OwnerRequests", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Menu", b =>
@@ -166,7 +166,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasIndex("RestaurantId");
 
-                    b.ToTable("Menus");
+                    b.ToTable("Menus", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.MenuItem", b =>
@@ -211,7 +211,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasIndex("MenuId");
 
-                    b.ToTable("MenuItems");
+                    b.ToTable("MenuItems", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Rating", b =>
@@ -249,7 +249,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Ratings");
+                    b.ToTable("Ratings", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Report", b =>
@@ -290,7 +290,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasIndex("OwnerId");
 
-                    b.ToTable("Reports");
+                    b.ToTable("Reports", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Restaurant", b =>
@@ -352,7 +352,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasIndex("OwnerId");
 
-                    b.ToTable("Restaurants");
+                    b.ToTable("Restaurants", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.RestaurantImage", b =>
@@ -384,7 +384,83 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasIndex("RestaurantId");
 
-                    b.ToTable("RestaurantImages");
+                    b.ToTable("RestaurantImages", (string)null);
+                });
+
+            modelBuilder.Entity("AdvicerApp.Core.Entities.Status", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(512)
+                        .HasColumnType("nvarchar(512)");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Statuses", (string)null);
+                });
+
+            modelBuilder.Entity("AdvicerApp.Core.Entities.StatusComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(512)
+                        .HasColumnType("nvarchar(512)");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("ParentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StatusId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentId");
+
+                    b.HasIndex("StatusId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("StatusComments", (string)null);
                 });
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.User", b =>
@@ -598,7 +674,7 @@ namespace AdvicerApp.DAL.Migrations
                     b.HasOne("AdvicerApp.Core.Entities.Comment", "Parent")
                         .WithMany("Children")
                         .HasForeignKey("ParentId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.HasOne("AdvicerApp.Core.Entities.Restaurant", "Restaurant")
                         .WithMany("Comments")
@@ -675,7 +751,8 @@ namespace AdvicerApp.DAL.Migrations
                 {
                     b.HasOne("AdvicerApp.Core.Entities.Comment", "Comment")
                         .WithMany("Reports")
-                        .HasForeignKey("CommentId");
+                        .HasForeignKey("CommentId")
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.HasOne("AdvicerApp.Core.Entities.User", "Owner")
                         .WithMany("Reports")
@@ -716,6 +793,43 @@ namespace AdvicerApp.DAL.Migrations
                         .IsRequired();
 
                     b.Navigation("Restaurant");
+                });
+
+            modelBuilder.Entity("AdvicerApp.Core.Entities.Status", b =>
+                {
+                    b.HasOne("AdvicerApp.Core.Entities.User", "User")
+                        .WithMany("Statuses")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AdvicerApp.Core.Entities.StatusComment", b =>
+                {
+                    b.HasOne("AdvicerApp.Core.Entities.StatusComment", "Parent")
+                        .WithMany("Children")
+                        .HasForeignKey("ParentId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("AdvicerApp.Core.Entities.Status", "Status")
+                        .WithMany("StatusComments")
+                        .HasForeignKey("StatusId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("AdvicerApp.Core.Entities.User", "User")
+                        .WithMany("StatusComments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Parent");
+
+                    b.Navigation("Status");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -797,6 +911,16 @@ namespace AdvicerApp.DAL.Migrations
                     b.Navigation("RestaurantImages");
                 });
 
+            modelBuilder.Entity("AdvicerApp.Core.Entities.Status", b =>
+                {
+                    b.Navigation("StatusComments");
+                });
+
+            modelBuilder.Entity("AdvicerApp.Core.Entities.StatusComment", b =>
+                {
+                    b.Navigation("Children");
+                });
+
             modelBuilder.Entity("AdvicerApp.Core.Entities.User", b =>
                 {
                     b.Navigation("Comments");
@@ -808,6 +932,10 @@ namespace AdvicerApp.DAL.Migrations
                     b.Navigation("Reports");
 
                     b.Navigation("Restaurants");
+
+                    b.Navigation("StatusComments");
+
+                    b.Navigation("Statuses");
                 });
 #pragma warning restore 612, 618
         }

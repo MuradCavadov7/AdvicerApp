@@ -76,7 +76,7 @@ public class CategoryService(ICategoryRepository _repo, IMapper _mapper) : ICate
 
     public async Task UpdateAsync(int id, CategoryUpdateDto dto)
     {
-        var category = await _repo.GetByIdAsync(id, x => new Category { Id = id ,Name = x.Name}, false, false);
+        var category = await _repo.GetByIdAsync(id, x =>x, false, false);
         if (category is null) throw new NotFoundException<Category>("Category is not found");
         _mapper.Map(dto, category);
         await _repo.SaveAsync();

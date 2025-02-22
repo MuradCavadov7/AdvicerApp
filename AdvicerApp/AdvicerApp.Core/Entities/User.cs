@@ -12,5 +12,6 @@ public class User : IdentityUser
     public ICollection<Rating> Ratings { get; set; }
     public ICollection<OwnerRequest> OwnerRequests { get; set; }
     public ICollection<Report> Reports { get; set; }
-
+    public ICollection<Status> Statuses { get; set; }
+    public ICollection<StatusComment> StatusComments { get; set; }
 }

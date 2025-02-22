@@ -17,6 +17,9 @@ public class AdvicerAppDbContext : IdentityDbContext<User>
     public DbSet<MenuItem> MenuItems { get; set; }
     public DbSet<OwnerRequest> OwnerRequests { get; set; }
     public DbSet<Report> Reports { get; set; }
+    public DbSet<Status> Statuses { get; set; }
+    public DbSet<StatusComment> StatusComments { get; set; }
+    
     public AdvicerAppDbContext(DbContextOptions options) : base(options)
     {
     }

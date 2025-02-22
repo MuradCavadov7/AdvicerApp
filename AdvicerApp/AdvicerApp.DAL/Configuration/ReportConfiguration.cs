@@ -20,7 +20,8 @@ public class ReportConfiguration : IEntityTypeConfiguration<Report>
 
         builder.HasOne(x => x.Comment)
             .WithMany(x => x.Reports)
-            .HasForeignKey(x => x.CommentId);
+            .HasForeignKey(x => x.CommentId)
+            .OnDelete(DeleteBehavior.NoAction);
 
     }
 }
