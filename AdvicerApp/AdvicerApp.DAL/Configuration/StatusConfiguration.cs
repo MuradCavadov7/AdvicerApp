@@ -14,6 +14,10 @@ public class StatusConfiguration : IEntityTypeConfiguration<Status>
             .IsRequired()
             .HasMaxLength(512);
 
+        builder.Property(x => x.Image)
+           .IsRequired(false)
+           .HasMaxLength(512);
+
         builder.HasOne(x => x.User)
             .WithMany(x => x.Statuses)
             .HasForeignKey(x => x.UserId);
