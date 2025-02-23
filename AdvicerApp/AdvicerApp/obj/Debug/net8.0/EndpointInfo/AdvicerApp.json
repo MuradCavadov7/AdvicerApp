@@ -1538,11 +1538,18 @@
                 "properties": {
                   "Content": {
                     "type": "string"
+                  },
+                  "StatusImage": {
+                    "type": "string",
+                    "format": "binary"
                   }
                 }
               },
               "encoding": {
                 "Content": {
+                  "style": "form"
+                },
+                "StatusImage": {
                   "style": "form"
                 }
               }
@@ -1601,11 +1608,18 @@
                 "properties": {
                   "Content": {
                     "type": "string"
+                  },
+                  "StatusImage": {
+                    "type": "string",
+                    "format": "binary"
                   }
                 }
               },
               "encoding": {
                 "Content": {
+                  "style": "form"
+                },
+                "StatusImage": {
                   "style": "form"
                 }
               }

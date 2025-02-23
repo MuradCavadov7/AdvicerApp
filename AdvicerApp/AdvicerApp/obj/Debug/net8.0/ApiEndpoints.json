@@ -990,6 +990,11 @@
         "Name": "Content",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "StatusImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -1005,6 +1010,11 @@
       {
         "Name": "Content",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StatusImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],
