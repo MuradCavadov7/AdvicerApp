@@ -36,10 +36,6 @@
                   },
                   "IsRestaurantOwner": {
                     "type": "boolean"
-                  },
-                  "OwnerDocument": {
-                    "type": "string",
-                    "format": "binary"
                   }
                 }
               },
@@ -63,9 +59,6 @@
                   "style": "form"
                 },
                 "IsRestaurantOwner": {
-                  "style": "form"
-                },
-                "OwnerDocument": {
                   "style": "form"
                 }
               }
@@ -791,50 +784,14 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "ContentType": {
-                    "type": "string"
-                  },
-                  "ContentDisposition": {
-                    "type": "string"
-                  },
-                  "Headers": {
-                    "type": "object",
-                    "additionalProperties": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "Length": {
-                    "type": "integer",
-                    "format": "int64"
-                  },
-                  "Name": {
-                    "type": "string"
-                  },
-                  "FileName": {
-                    "type": "string"
+                  "document": {
+                    "type": "string",
+                    "format": "binary"
                   }
                 }
               },
               "encoding": {
-                "ContentType": {
-                  "style": "form"
-                },
-                "ContentDisposition": {
-                  "style": "form"
-                },
-                "Headers": {
-                  "style": "form"
-                },
-                "Length": {
-                  "style": "form"
-                },
-                "Name": {
-                  "style": "form"
-                },
-                "FileName": {
+                "document": {
                   "style": "form"
                 }
               }

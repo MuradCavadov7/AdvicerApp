@@ -10,7 +10,7 @@ namespace AdvicerApp.Controllers;
 public class OwnerRequestsController(IOwnerApproveService _service) : ControllerBase
 {
     [HttpPost("request")]
-    public async Task<IActionResult> RequestApproval([FromForm] IFormFile document)
+    public async Task<IActionResult> RequestApproval(IFormFile document)
     {
         await _service.RequestApprovalAsync(document);
         return Ok();

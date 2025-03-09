@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ixzs+F1KxRRY8PUVbWtt9YRcsw27Yz4+GNZWeLVcttA=",
+  "Hash": "mn1XwqVOC4gnBN8PLwnGmUr6y1+sVRFsvSVmytkuWsE=",
   "Source": "AdvicerApp",
   "BasePath": "_content/AdvicerApp",
   "Mode": "Default",
@@ -36,6 +36,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\menuItem\\l221uxka.iin.png"
+    },
+    {
+      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\cpotfpjz.i2v.jpg",
+      "SourceId": "AdvicerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
+      "BasePath": "_content/AdvicerApp",
+      "RelativePath": "imgs/ownerDocument/cpotfpjz.i2v#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n1f1ypupn4",
+      "Integrity": "lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\ownerDocument\\cpotfpjz.i2v.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\i1ynposf.1yw.jpg",
+      "SourceId": "AdvicerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
+      "BasePath": "_content/AdvicerApp",
+      "RelativePath": "imgs/ownerDocument/i1ynposf.1yw#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n1f1ypupn4",
+      "Integrity": "lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\ownerDocument\\i1ynposf.1yw.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\mi4mwbgd.mop.jpg",
+      "SourceId": "AdvicerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\",
+      "BasePath": "_content/AdvicerApp",
+      "RelativePath": "imgs/ownerDocument/mi4mwbgd.mop#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n1f1ypupn4",
+      "Integrity": "lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\ownerDocument\\mi4mwbgd.mop.jpg"
     },
     {
       "Identity": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\restaurant\\fo4c3rt1.ecy.jpg",
@@ -181,6 +244,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-6MesGDn6lvlzTbDRDlvmfMvh2HOId2P/EankGzPUxcs="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/ownerDocument/cpotfpjz.i2v.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\cpotfpjz.i2v.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:50:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/ownerDocument/cpotfpjz.i2v.n1f1ypupn4.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\cpotfpjz.i2v.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:50:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n1f1ypupn4"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/ownerDocument/cpotfpjz.i2v.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/ownerDocument/i1ynposf.1yw.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\i1ynposf.1yw.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:16:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/ownerDocument/i1ynposf.1yw.n1f1ypupn4.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\i1ynposf.1yw.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:16:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n1f1ypupn4"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/ownerDocument/i1ynposf.1yw.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/ownerDocument/mi4mwbgd.mop.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\mi4mwbgd.mop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:44:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/ownerDocument/mi4mwbgd.mop.n1f1ypupn4.jpg",
+      "AssetFile": "C:\\Users\\99477\\Desktop\\AdvicerApp\\AdvicerApp\\AdvicerApp\\wwwroot\\imgs\\ownerDocument\\mi4mwbgd.mop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 17:44:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n1f1ypupn4"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/ownerDocument/mi4mwbgd.mop.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXe+dfKEKm6txHoBbtpSPhuUyxZM9SflsCmwC39NG9Q="
         }
       ]
     },

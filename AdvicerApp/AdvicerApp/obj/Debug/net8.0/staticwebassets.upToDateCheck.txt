@@ -1,4 +1,7 @@
 wwwroot\imgs\menuItem\l221uxka.iin.png
+wwwroot\imgs\ownerDocument\cpotfpjz.i2v.jpg
+wwwroot\imgs\ownerDocument\i1ynposf.1yw.jpg
+wwwroot\imgs\ownerDocument\mi4mwbgd.mop.jpg
 wwwroot\imgs\restaurant\fo4c3rt1.ecy.jpg
 wwwroot\imgs\restaurant\gkkibvnf.oiq.jpg
 wwwroot\imgs\restaurant\w1vunoeu.fks.jpg

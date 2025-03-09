@@ -21,13 +21,12 @@ public class OwnerApproveService(IOwnerRequestRepository _repo, UserManager<User
         if (await _repo.IsExistAsync(x => x.OwnerId == ownerId)) throw new ExistsException<User>("Owner request already submitted");
         var documentUrl = await document.UploadAsync(_env.WebRootPath, "imgs", "ownerDocument");
 
-        var request = new OwnerRequest
-        {
-            OwnerId = ownerId,
-            DocumentUrl = documentUrl,
-            IsApproved = false
-        };
+        var request = new OwnerRequest();
+        request.DocumentUrl = documentUrl;
+        request.OwnerId = ownerId;
+        request.IsApproved = false;
         await _repo.AddAsync(request);
+        await _repo.SaveAsync();
     }
     public async Task ApproveOwnerAsync(string ownerId)
     {
