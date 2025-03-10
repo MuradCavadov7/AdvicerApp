@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class CommentService(ICommentRepository _repo, ICurrentUser _user, IRestaurantRepository _restRepo, IMapper _mapper,IUserService _userService,IWebHostEnvironment _env) : ICommentService
+public class CommentService(ICommentRepository _repo, ICurrentUser _user, IRestaurantRepository _restRepo, IMapper _mapper,IUserService _userService,IWebHostEnvironment _env,IReportRepository _repRepo) : ICommentService
 {
     private string _userId = _user.GetId();
     private string _userRole = _user.GetRole();
@@ -76,6 +76,16 @@ public class CommentService(ICommentRepository _repo, ICurrentUser _user, IResta
                 File.Delete(imagePath);
             }
         }
+
+        if (comment.Reports != null && comment.Reports.Any())
+        {
+            foreach (var report in comment.Reports)
+            {
+                _repRepo.Delete(report);
+            }
+            await _repo.SaveAsync();
+        }
+
         if (comment.Children != null)
         {
             foreach (var reply in comment.Children)

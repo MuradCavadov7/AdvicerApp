@@ -4,6 +4,7 @@ using AdvicerApp.DAL.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdvicerApp.DAL.Migrations
 {
     [DbContext(typeof(AdvicerAppDbContext))]
-    partial class AdvicerAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250310183713_ReportNoAction")]
+    partial class ReportNoAction
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -260,7 +263,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("CommmentId")
+                    b.Property<int?>("CommentId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedTime")
@@ -286,7 +289,7 @@ namespace AdvicerApp.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CommmentId");
+                    b.HasIndex("CommentId");
 
                     b.HasIndex("OwnerId");
 
@@ -756,9 +759,9 @@ namespace AdvicerApp.DAL.Migrations
 
             modelBuilder.Entity("AdvicerApp.Core.Entities.Report", b =>
                 {
-                    b.HasOne("AdvicerApp.Core.Entities.Comment", "Commment")
+                    b.HasOne("AdvicerApp.Core.Entities.Comment", "Comment")
                         .WithMany("Reports")
-                        .HasForeignKey("CommmentId")
+                        .HasForeignKey("CommentId")
                         .OnDelete(DeleteBehavior.NoAction);
 
                     b.HasOne("AdvicerApp.Core.Entities.User", "Owner")
@@ -767,7 +770,7 @@ namespace AdvicerApp.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Commment");
+                    b.Navigation("Comment");
 
                     b.Navigation("Owner");
                 });

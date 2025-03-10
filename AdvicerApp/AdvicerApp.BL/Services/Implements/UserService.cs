@@ -71,6 +71,6 @@ public class UserService(UserManager<User> _userManager,IReportRepository _repor
 
     public async Task<bool> IsUserBanned(string userId)
     {
-        return await _reportRepo.IsExistAsync(x => x.Comment.UserId == userId && x.IsResolved);
+        return await _reportRepo.IsExistAsync(x => x.Commment.UserId == userId && x.IsResolved);
     }
 }

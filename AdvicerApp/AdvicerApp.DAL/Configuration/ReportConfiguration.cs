@@ -18,9 +18,9 @@ public class ReportConfiguration : IEntityTypeConfiguration<Report>
             .WithMany(x => x.Reports)
             .HasForeignKey(x => x.OwnerId);
 
-        builder.HasOne(x => x.Comment)
+        builder.HasOne(x => x.Commment)
             .WithMany(x => x.Reports)
-            .HasForeignKey(x => x.CommentId)
+            .HasForeignKey(x => x.CommmentId)
             .OnDelete(DeleteBehavior.NoAction);
 
     }

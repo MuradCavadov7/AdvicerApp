@@ -35,7 +35,7 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
         var report = new Report
         {
             OwnerId = _userId,
-            CommentId = dto.CommentId,
+            CommmentId = dto.CommentId,
             Reason = dto.Reason,
             IsResolved = false,
         };
@@ -52,8 +52,8 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
         {
             Id = x.Id,
             OwnerId = x.OwnerId,
-            CommentId = x.CommentId ?? 0,
-            CommentText = x.Comment != null ? x.Comment.Text : "Deleted Comment",
+            CommentId = x.CommmentId ?? 0,
+            CommentText = x.Commment != null ? x.Commment.Text : "Deleted Comment",
             Reason = x.Reason,
             IsResolved = x.IsResolved
         },true,false);
@@ -67,8 +67,8 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
         {
             Id = x.Id,
             OwnerId = x.OwnerId,
-            CommentId = x.CommentId ?? 0,
-            CommentText = x.Comment != null ? x.Comment.Text : "Deleted Comment",
+            CommentId = x.CommmentId ?? 0,
+            CommentText = x.Commment != null ? x.Commment.Text : "Deleted Comment",
             Reason = x.Reason,
             IsResolved = x.IsResolved
         }, true, false);
@@ -78,17 +78,17 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
 
     public async Task ResolveAsync(int id)
     {
-        var report = await _repo.GetByIdAsync(id, x => x, false, false);
+        var report = await _repo.GetByIdAsync(id, x => x, true, false);
         if (report == null)
             throw new NotFoundException<Report>();
 
-        if (report.Comment != null)
+        if (report.CommmentId.HasValue)
         {
-            var comment = await _comRepo.GetByIdAsync(report.CommentId.Value, x => x, false, false);
+            var comment = await _comRepo.GetByIdAsync(report.CommmentId.Value, x => x, false, false);
             if (comment == null)
                 throw new NotFoundException<Comment>();
-
-            _comRepo.Delete(comment);
+            _repo.Delete(report);
+            await _comRepo.DeleteAsync(report.CommmentId.Value);
             await _comRepo.SaveAsync();
         }
 
