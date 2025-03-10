@@ -78,22 +78,22 @@ public class ReportService(IReportRepository _repo,ICurrentUser _user, ICommentR
 
     public async Task ResolveAsync(int id)
     {
-        var report = await _repo.GetByIdAsync(id,x=>x,false,false);
+        var report = await _repo.GetByIdAsync(id, x => x, false, false);
         if (report == null)
             throw new NotFoundException<Report>();
+
         if (report.Comment != null)
         {
             var comment = await _comRepo.GetByIdAsync(report.CommentId.Value, x => x, false, false);
-            if (comment == null) 
+            if (comment == null)
                 throw new NotFoundException<Comment>();
 
-            else
-            {
-                _comRepo.Delete(comment);
-                await _comRepo.SaveAsync();
-            }
+            _comRepo.Delete(comment);
+            await _comRepo.SaveAsync();
         }
+
         report.IsResolved = true;
         await _repo.SaveAsync();
     }
+
 }

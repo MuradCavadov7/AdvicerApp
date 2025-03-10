@@ -12,7 +12,7 @@ using System.Text;
 
 namespace AdvicerApp.BL.Services.Implements;
 
-public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler, RoleManager<IdentityRole> _roleManager, SignInManager<User> _signInManager, IMemoryCache _cache, IEmailSend _sendEmail, IOwnerApproveService _ownerApproveService) : IAuthService
+public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler, RoleManager<IdentityRole> _roleManager, SignInManager<User> _signInManager, ICacheService _redis, IEmailSend _sendEmail, IOwnerApproveService _ownerApproveService) : IAuthService
 {
     public async Task<string> RegisterAsync(RegisterDto dto)
     {
@@ -84,7 +84,8 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
 
     public async Task VerifyEmailAsync(string email, int code)
     {
-        if (!_cache.TryGetValue(email, out int cachedCode))
+        var cachedCode = await _redis.GetAsync<int?>(email);
+        if (cachedCode == null)
             throw new BadRequestException("Verification code expired or not found");
 
         if (cachedCode != code)
@@ -105,12 +106,13 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
             }
             throw new BadRequestException(sb.ToString().Trim());
         }
-            _cache.Remove(email);
+        await _redis.RemoveAsync(email);
     }
 
     public async Task<int> SendVerificationCodeAsync(string email)
     {
-        if (_cache.TryGetValue(email, out _))
+        var existingCode = await _redis.GetAsync<int?>(email);
+        if (existingCode != null)
             throw new BadRequestException("Email already sent");
 
         var user = await _userManager.FindByEmailAsync(email);
@@ -120,39 +122,9 @@ public class AuthService(UserManager<User> _userManager, IJwtHandler _jwtHandler
         Random random = new Random();
         int code = random.Next(100000, 999999);
         await _sendEmail.SendEmailAsync(email, user.UserName, code.ToString());
-        _cache.Set(email, code, TimeSpan.FromMinutes(5));
+        await _redis.SetAsync(email, code, 5);
         return code;
-
-    }
-
-    public async Task VerifyTwoFactorCodeAsync(string email, int code, string deviceId)
-    {
-        if (!_cache.TryGetValue(email, out int cachedCode))
-            throw new BadRequestException("Verification code expired or not found");
-
-        if (cachedCode != code)
-            throw new BadRequestException("Verification code is incorrect.");
-
-        var user = await _userManager.FindByEmailAsync(email);
-        if (user == null)
-            throw new NotFoundException<User>("User not found");
-            
-        var userDevices = await _userManager.GetClaimsAsync(user);
-        var existingDeviceClaim = userDevices.FirstOrDefault(c => c.Type == "DeviceId");
-        if (existingDeviceClaim == null)
-        {
-            await _userManager.AddClaimAsync(user, new Claim("DeviceId", deviceId));
-        }
-
-        _cache.Remove(email);
-    }
-
-
-    public async Task SendTwoFactorCodeAsync(User user)
-    {
-        Random random = new Random();
-        int code = random.Next(100000, 999999);
-        await _sendEmail.SendEmailAsync(user.Email, user.UserName, code.ToString()); 
-        _cache.Set(user.Email, code, TimeSpan.FromMinutes(5));
     }
 }
+
+

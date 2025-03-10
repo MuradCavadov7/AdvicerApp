@@ -38,6 +38,7 @@ public class Program
         builder.Services.AddAutoMapper();
         builder.Services.AddRepositories();
         builder.Services.AddHttpContextAcs();
+        builder.Services.AddCacheService(builder.Configuration);
         builder.Services.AddSmtpOptions(builder.Configuration);
         builder.Services.AddJwtOptions(builder.Configuration);
         builder.Services.AddEndpointsApiExplorer();

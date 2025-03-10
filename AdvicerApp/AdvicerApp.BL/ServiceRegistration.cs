@@ -4,6 +4,7 @@ using AdvicerApp.BL.Services.Implements;
 using AdvicerApp.BL.Services.Interface;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AdvicerApp.BL;
@@ -28,6 +29,17 @@ public static class ServiceRegistration
         services.AddScoped<ICurrentUser, CurrentUser>();
         services.AddScoped<IEmailSend, EmailSend>();
         services.AddMemoryCache();
+        return services;
+    }
+    public static IServiceCollection AddCacheService(this IServiceCollection services, IConfiguration configuration)
+    {
+            services.AddStackExchangeRedisCache(opt =>
+            {
+                opt.Configuration =
+                configuration.GetConnectionString("Redis");
+                opt.InstanceName = "Advicer App_";
+            });
+            services.AddScoped<ICacheService, RedisService>();
         return services;
     }
     public static IServiceCollection AddHttpContextAcs(this IServiceCollection services)
